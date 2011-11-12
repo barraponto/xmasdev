@@ -1,4 +1,4 @@
-
+@import "compass";
 // This variable controls the total width of the container div
 // You can use px for a Fixed layout or % for a Liquid layout
 $xmasdev-width: 960px;
@@ -196,7 +196,18 @@ $xmas-white: #FFFFFF;
 
 .-xmasdev-block-title { }
 
-.-xmasdev-block-content { @extend .-xmasdev-restricted-html-content; }
+.-xmasdev-block-content { 
+  @extend .-xmasdev-restricted-html-content;
+  ul { 
+    @include no-bullets; 
+    padding: 0;
+    margin: 0 0 20px 0; }
+  li {
+    padding: 5px;
+    border-bottom: 1px dotted #ccc; }
+    a { 
+      color: $xmas-light-grey;
+      &:hover { color: $xmas-blue; } } }
 
 // Make copies of the components for a diversity of block styles, like these
 .-xmasdev-content-block { }

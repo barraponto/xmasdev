@@ -21,6 +21,32 @@
   text-decoration: underline;
 }
 
+/* line 201, ../sass/_xmasdev-skin.scss */
+.-xmasdev-block-content ul, .block .content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+/* line 11, ../../../../../../../.rvm/gems/ruby-1.9.2-p290@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
+.-xmasdev-block-content ul li, .block .content ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px;
+}
+/* line 205, ../sass/_xmasdev-skin.scss */
+.-xmasdev-block-content li, .block .content li {
+  padding: 5px;
+  border-bottom: 1px dotted #ccc;
+}
+/* line 208, ../sass/_xmasdev-skin.scss */
+.-xmasdev-block-content a, .block .content a {
+  color: #666666;
+}
+/* line 210, ../sass/_xmasdev-skin.scss */
+.-xmasdev-block-content a:hover, .block .content a:hover {
+  color: #0079bb;
+}
+
 /* page.tpl.php */
 /* block.tpl.php */
 /* node.tpl.php */
