@@ -102,24 +102,48 @@ $xmas-white: #FFFFFF;
   a { @extend .-xmasdev-a; } }
 
 // Page Components
-.-xmasdev-body { }
+.-xmasdev-body {
+  width: 960px;
+  margin: 0 auto;
+  background: image-url('bk_body.jpg') no-repeat scroll top center $xmas-dark-blue;
+  color: $xmas-dark-grey;
+  line-height: 135%; /* TODO: vertical rhythm */ }
 
 .-xmasdev-skip-link { }
 
 .-xmasdev-page { }
 
-.-xmasdev-header { }
+.-xmasdev-header {
+  height: 229px; /* TODO: vertical rhythm */
+  position: relative; /* TODO: layout */ }
 
 .-xmasdev-logo-title { } // usually a #logo-title wrapper div (YMMV)
 
 .-xmasdev-logo { }
 
-.-xmasdev-name-and-slogan { } // usually a #name-and-slogan wrapper div (YMMV)
+.-xmasdev-name-and-slogan { 
+  position: absolute; /* TODO: layout */
+  top: 70px; /* TODO: layout */
+  left: 70px; /* TODO: layout */
+  right: 70px; /* fixes misterious width quirk */
+} // usually a #name-and-slogan wrapper div (YMMV)
 
 .-xmasdev-site-name {
-  a { } }
+  letter-spacing: -1px;
+  font-size: 2.429em; //34px if base font-size is 14px
+  background-image: none;
+  padding: 0;
+  a { 
+    font-weight: normal;
+    line-height: 25px; /* TODO: vertical rhythm */
+    @include link-colors($xmas-white); } }
 
-.-xmasdev-site-slogan { }
+.-xmasdev-site-slogan {
+  padding: 10px 0; /* TODO: vertical rhythm */
+  text-transform: uppercase;
+  font-size: 0.786em;
+  color: #CECFDB; /* TODO: color palette */
+}
 
 .-xmasdev-header-region { }
 
@@ -139,16 +163,26 @@ $xmas-white: #FFFFFF;
     &.last { }
     &.expanded { } } }
 
-.-xmasdev-sidebar { } // by default both sidebars inherit these styles
+.-xmasdev-sidebar {
+  width: 270px;
+  float: left;
+} // by default both sidebars inherit these styles
 
-.-xmasdev-main { }
+.-xmasdev-main {
+  width: 690px;
+  float: left;
+  background: $xmas-white image-url('bk_content.jpg') 0 0 repeat-y; }
 
 .-xmasdev-mission { }
 
 .-xmasdev-breadcrumb {
   a { } }
 
-.-xmasdev-content { }
+.-xmasdev-content {
+  width: 635px;
+  margin: 0 auto;
+  position: relative;
+}
 
 .-xmasdev-tabs {
   .primary { }
@@ -160,6 +194,7 @@ $xmas-white: #FFFFFF;
   a.active { } }
 
 .-xmasdev-messages {
+  @include no-bullets;
   &.status { }
   &.warning { }
   &.error { }
@@ -171,10 +206,16 @@ $xmas-white: #FFFFFF;
 }
 
 .-xmasdev-pager {
+  margin: 0;
+  padding: 0;
   .pager-item { }
   .pager-current { }
-  .pager-previous { }
-  .pager-next { }
+  .pager-previous { 
+    float: right; /* TODO: layout */
+    margin: 5px 0 5px 15px; /* TODO: vertical rhythm */ }
+  .pager-next {
+    float: left; /* TODO: layout */
+    margin: 5px 15px 5px 0; /* TODO: vertical rhythm */ }
   .pager-first { }
   .pager-last { }
   a { } }
@@ -182,11 +223,23 @@ $xmas-white: #FFFFFF;
 .-xmasdev-feed-icons {
   .feed-icon { } }
 
-.-xmasdev-title { }
+.-xmasdev-title {
+  background: image-url('bk_line.jpg') no-repeat scroll left bottom transparent;
+  font-size: 1.786em; /* 25px if base font-size is 14px */
+  font-weight: normal;
+  letter-spacing: -1px;
+  padding-bottom: 25px; /* TODO: vertical rhythm */
+  .display-submitted & { 
+    background: none; }
+}
 
 .-xmasdev-content-area { }
 
-.-xmasdev-footer { }
+.-xmasdev-footer {
+  padding: 65px 0 40px; /* TODO: vertical rhythm */
+  color: $xmas-light-grey;
+  background: image-url('bk_footer.jpg') 0 0 no-repeat;
+  position: relative; /* TODO: layout */ }
 
 .-xmasdev-footer-message { }
 
@@ -194,7 +247,19 @@ $xmas-white: #FFFFFF;
 // These are defaults for every block in your theme
 .-xmasdev-block { }
 
-.-xmasdev-block-title { }
+.-xmasdev-block-title {
+  background: image-url('bk_h2_right.png') 0 0 no-repeat;
+  height: 34px;
+  line-height: 32px;
+  text-indent: 33px;
+  text-transform: uppercase;
+  color: #DBEDF9;
+  text-shadow: #00659F 1px 1px;
+  font-size: 12px;
+  font-weight: normal;
+  margin-left: 2px;
+  margin-right: -7px;
+}
 
 .-xmasdev-block-content { 
   @extend .-xmasdev-restricted-html-content;
@@ -224,11 +289,19 @@ $xmas-white: #FFFFFF;
 
 // Node Components
 // Make copies of these components for a diversity of node styles
-.-xmasdev-node { }
+.-xmasdev-node {
+  background: image-url('bk_line_ornament.jpg') bottom left no-repeat;
+  padding-bottom:25px;
+  margin-bottom:20px;
+  position: relative;
+}
 
 .-xmasdev-node-picture { }
 
-.-xmasdev-node-title { } //meant for node listings, see also .-xmasdev-title
+.-xmasdev-node-title {
+  @extend .-xmasdev-title;
+  .created ~ & { padding-left: 50px; }
+} //meant for node listings, see also .-xmasdev-title
 
 .-xmasdev-node-meta {
 
@@ -241,7 +314,11 @@ $xmas-white: #FFFFFF;
 .-xmasdev-node-links {
   li {
     &.first { }
-    &.last { } } }
+    &.last { }
+    a { 
+      @extend .-xmas-a;
+      color: $xmas-red;
+      font-weight: bold; } } }
 
 .-xmasdev-node-sticky { }
 

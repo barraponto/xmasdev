@@ -21,7 +21,153 @@
   text-decoration: underline;
 }
 
-/* line 201, ../sass/_xmasdev-skin.scss */
+/* line 105, ../sass/_xmasdev-skin.scss */
+.-xmasdev-body, body {
+  width: 960px;
+  margin: 0 auto;
+  background: url('../images/bk_body.jpg?1321085858') no-repeat scroll top center #1f1f30;
+  color: #333333;
+  line-height: 135%;
+  /* TODO: vertical rhythm */
+}
+
+/* line 116, ../sass/_xmasdev-skin.scss */
+.-xmasdev-header, #header {
+  height: 229px;
+  /* TODO: vertical rhythm */
+  position: relative;
+  /* TODO: layout */
+}
+
+/* line 124, ../sass/_xmasdev-skin.scss */
+.-xmasdev-name-and-slogan, #name-and-slogan {
+  position: absolute;
+  /* TODO: layout */
+  top: 70px;
+  /* TODO: layout */
+  left: 70px;
+  /* TODO: layout */
+  right: 70px;
+  /* fixes misterious width quirk */
+}
+
+/* line 131, ../sass/_xmasdev-skin.scss */
+.-xmasdev-site-name, #site-name {
+  letter-spacing: -1px;
+  font-size: 2.429em;
+  background-image: none;
+  padding: 0;
+}
+/* line 136, ../sass/_xmasdev-skin.scss */
+.-xmasdev-site-name a, #site-name a {
+  font-weight: normal;
+  line-height: 25px;
+  /* TODO: vertical rhythm */
+  color: white;
+}
+
+/* line 141, ../sass/_xmasdev-skin.scss */
+.-xmasdev-site-slogan, #site-slogan {
+  padding: 10px 0;
+  /* TODO: vertical rhythm */
+  text-transform: uppercase;
+  font-size: 0.786em;
+  color: #CECFDB;
+  /* TODO: color palette */
+}
+
+/* line 166, ../sass/_xmasdev-skin.scss */
+.-xmasdev-sidebar, #sidebar-left, #sidebar-right {
+  width: 270px;
+  float: left;
+}
+
+/* line 171, ../sass/_xmasdev-skin.scss */
+.-xmasdev-main, #main {
+  width: 690px;
+  float: left;
+  background: white url('../images/bk_content.jpg?1321085858') 0 0 repeat-y;
+}
+
+/* line 181, ../sass/_xmasdev-skin.scss */
+.-xmasdev-content, #content {
+  width: 635px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 196, ../sass/_xmasdev-skin.scss */
+.-xmasdev-messages, #content .messages {
+  list-style: none;
+}
+/* line 11, ../../../../../../../.rvm/gems/ruby-1.9.2-p290@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
+.-xmasdev-messages li, #content .messages li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px;
+}
+
+/* line 208, ../sass/_xmasdev-skin.scss */
+.-xmasdev-pager, #content .pager {
+  margin: 0;
+  padding: 0;
+}
+/* line 213, ../sass/_xmasdev-skin.scss */
+.-xmasdev-pager .pager-previous, #content .pager .pager-previous {
+  float: right;
+  /* TODO: layout */
+  margin: 5px 0 5px 15px;
+  /* TODO: vertical rhythm */
+}
+/* line 216, ../sass/_xmasdev-skin.scss */
+.-xmasdev-pager .pager-next, #content .pager .pager-next {
+  float: left;
+  /* TODO: layout */
+  margin: 5px 15px 5px 0;
+  /* TODO: vertical rhythm */
+}
+
+/* line 226, ../sass/_xmasdev-skin.scss */
+.-xmasdev-title, .-xmasdev-node-title, .node > h2, #page-title {
+  background: url('../images/bk_line.jpg?1321085858') no-repeat scroll left bottom transparent;
+  font-size: 1.786em;
+  /* 25px if base font-size is 14px */
+  font-weight: normal;
+  letter-spacing: -1px;
+  padding-bottom: 25px;
+  /* TODO: vertical rhythm */
+}
+/* line 232, ../sass/_xmasdev-skin.scss */
+.display-submitted .-xmasdev-title, .display-submitted .-xmasdev-node-title, .display-submitted .node > h2, .display-submitted #page-title {
+  background: none;
+}
+
+/* line 238, ../sass/_xmasdev-skin.scss */
+.-xmasdev-footer, #footer-wrapper {
+  padding: 65px 0 40px;
+  /* TODO: vertical rhythm */
+  color: #666666;
+  background: url('../images/bk_footer.jpg?1321085858') 0 0 no-repeat;
+  position: relative;
+  /* TODO: layout */
+}
+
+/* line 250, ../sass/_xmasdev-skin.scss */
+.-xmasdev-block-title, .block > h2 {
+  background: url('../images/bk_h2_right.png?1321085858') 0 0 no-repeat;
+  height: 34px;
+  line-height: 32px;
+  text-indent: 33px;
+  text-transform: uppercase;
+  color: #DBEDF9;
+  text-shadow: #00659F 1px 1px;
+  font-size: 12px;
+  font-weight: normal;
+  margin-left: 2px;
+  margin-right: -7px;
+}
+
+/* line 266, ../sass/_xmasdev-skin.scss */
 .-xmasdev-block-content ul, .block .content ul {
   list-style: none;
   padding: 0;
@@ -33,18 +179,37 @@
   list-style-type: none;
   margin-left: 0px;
 }
-/* line 205, ../sass/_xmasdev-skin.scss */
+/* line 270, ../sass/_xmasdev-skin.scss */
 .-xmasdev-block-content li, .block .content li {
   padding: 5px;
   border-bottom: 1px dotted #ccc;
 }
-/* line 208, ../sass/_xmasdev-skin.scss */
+/* line 273, ../sass/_xmasdev-skin.scss */
 .-xmasdev-block-content a, .block .content a {
   color: #666666;
 }
-/* line 210, ../sass/_xmasdev-skin.scss */
+/* line 275, ../sass/_xmasdev-skin.scss */
 .-xmasdev-block-content a:hover, .block .content a:hover {
   color: #0079bb;
+}
+
+/* line 292, ../sass/_xmasdev-skin.scss */
+.-xmasdev-node, .node {
+  background: url('../images/bk_line_ornament.jpg?1321085858') bottom left no-repeat;
+  padding-bottom: 25px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* line 303, ../sass/_xmasdev-skin.scss */
+.created ~ .-xmasdev-node-title, .created ~ .node > h2 {
+  padding-left: 50px;
+}
+
+/* line 318, ../sass/_xmasdev-skin.scss */
+.-xmasdev-node-links li a, .node .links li a {
+  color: #c32400;
+  font-weight: bold;
 }
 
 /* page.tpl.php */
