@@ -4,15 +4,15 @@
 $xmasdev-width: 960px;
 
 // These variables control the size of the sidebars
-$xmasdev-first-sidebar-width: 200px;
+$xmasdev-first-sidebar-width: 270px;
 $xmasdev-second-sidebar-width: 200px;
 
 // This variable positions the content relative to the sidebars
 // Possible values are first, last, middle
-$xmasdev-content-position: "middle";
+$xmasdev-content-position: "first";
 
 // These variables control the typefaces as defined in html-reset.css
-$xmasdev-proportional-typeface: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+$xmasdev-proportional-typeface: Georgia, "Times New Roman", Times, serif;
 $xmasdev-monospaced-typeface: "Courier New", "DejaVu Sans Mono", monospace;
 
 // These variables control the font sizes as defined in html-reset.css
