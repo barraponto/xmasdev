@@ -182,7 +182,22 @@ $xmas-white: #FFFFFF;
   width: 635px;
   margin: 0 auto;
   position: relative;
-}
+  .created {
+    position: absolute; /* TODO: layout */
+    top:0;
+    left: -40px;
+    height: 35px;
+    width: 70px;
+    background: image-url('bk_date.png') 0 0 no-repeat;
+    color: $xmas-white;
+    line-height: 25px; /* TODO: vertical rhythm */
+    text-align: center;
+    font-size: 0.786em; /* TODO: vertical rhythm */
+    text-transform: uppercase;
+    span {
+      font-weight: bold;
+      font-size: 19px;
+      vertical-align: middle; } } }
 
 .-xmasdev-tabs {
   .primary { }
