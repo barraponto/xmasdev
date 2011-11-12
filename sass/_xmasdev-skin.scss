@@ -1,0 +1,238 @@
+
+// This variable controls the total width of the container div
+// You can use px for a Fixed layout or % for a Liquid layout
+$xmasdev-width: 960px;
+
+// These variables control the size of the sidebars
+$xmasdev-first-sidebar-width: 200px;
+$xmasdev-second-sidebar-width: 200px;
+
+// This variable positions the content relative to the sidebars
+// Possible values are first, last, middle
+$xmasdev-content-position: "middle";
+
+// These variables control the typefaces as defined in html-reset.css
+$xmasdev-proportional-typeface: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+$xmasdev-monospaced-typeface: "Courier New", "DejaVu Sans Mono", monospace;
+
+// These variables control the font sizes as defined in html-reset.css
+$xmasdev-base-font-size: 14px;
+
+//HTML Elements
+.-xmasdev-h2 { }
+
+.-xmasdev-h3 { }
+
+.-xmasdev-h4 { }
+
+.-xmasdev-p { }
+
+.-xmasdev-li { }
+
+.-xmasdev-ul { }
+
+.-xmasdev-ol { }
+
+.-xmasdev-blockquote { }
+
+.-xmasdev-cite { }
+
+.-xmasdev-a {
+  &:link { }
+  &:visited { }
+  &:hover { }
+  &:focus { }
+  &:active { } }
+
+.-xmasdev-pre { }
+
+.-xmasdev-code { }
+
+.-xmasdev-table {
+  caption { }
+  tr {
+    &.odd { }
+    &.even { }
+    th { }
+    td { }
+    thead & { }
+    tfoot & { }
+    tbody & { } } }
+
+// Content Classes
+.-xmasdev-full-html-content {
+  h2 { @extend .-xmasdev-h2; }
+  h3 { @extend .-xmasdev-h3; }
+  h4 { @extend .-xmasdev-h4; }
+  p { @extend .-xmasdev-p; }
+  li { @extend .-xmasdev-li; }
+  ul { @extend .-xmasdev-ul; }
+  ol { @extend .-xmasdev-ol; }
+  pre { @extend .-xmasdev-pre; }
+  code { @extend .-xmasdev-code; }
+  blockquote { @extend .-xmasdev-blockquote; }
+  cite { @extend .-xmasdev-cite; }
+  a { @extend .-xmasdev-a; }
+  table { @extend .-xmasdev-table; } }
+
+.-xmasdev-restricted-html-content {
+  h3 { @extend .-xmasdev-h3; }
+  h4 { @extend .-xmasdev-h4; }
+  p { @extend .-xmasdev-p; }
+  ul { @extend .-xmasdev-ul; }
+  ol { @extend .-xmasdev-ol; }
+  li { @extend .-xmasdev-li; }
+  a { @extend .-xmasdev-a; } }
+
+// Page Components
+.-xmasdev-body { }
+
+.-xmasdev-skip-link { }
+
+.-xmasdev-page { }
+
+.-xmasdev-header { }
+
+.-xmasdev-logo-title { } // usually a #logo-title wrapper div (YMMV)
+
+.-xmasdev-logo { }
+
+.-xmasdev-name-and-slogan { } // usually a #name-and-slogan wrapper div (YMMV)
+
+.-xmasdev-site-name {
+  a { } }
+
+.-xmasdev-site-slogan { }
+
+.-xmasdev-header-region { }
+
+.-xmasdev-container { }
+
+.-xmasdev-navigation { }
+
+.-xmasdev-menu { // by default, both menus inherit these styles
+  > li { // use '>' to target only child items
+    &.first { }
+    &.last { }
+    &.expanded { } } }
+
+.-xmasdev-submenu { // think expanded menus, not secondary menus
+    > li { // use '>' to target only child items
+    &.first { }
+    &.last { }
+    &.expanded { } } }
+
+.-xmasdev-sidebar { } // by default both sidebars inherit these styles
+
+.-xmasdev-main { }
+
+.-xmasdev-mission { }
+
+.-xmasdev-breadcrumb {
+  a { } }
+
+.-xmasdev-content { }
+
+.-xmasdev-tabs {
+  .primary { }
+  .secondary { }
+  // the following styles apply to both tab groups.
+  ul { }
+  li { }
+  a { }
+  a.active { } }
+
+.-xmasdev-messages {
+  &.status { }
+  &.warning { }
+  &.error { }
+  &.help { }
+
+  // when there is more than one message, they get wrapped in a ul
+  ul { }
+  li { }
+}
+
+.-xmasdev-pager {
+  .pager-item { }
+  .pager-current { }
+  .pager-previous { }
+  .pager-next { }
+  .pager-first { }
+  .pager-last { }
+  a { } }
+
+.-xmasdev-feed-icons {
+  .feed-icon { } }
+
+.-xmasdev-title { }
+
+.-xmasdev-content-area { }
+
+.-xmasdev-footer { }
+
+.-xmasdev-footer-message { }
+
+// Block Components
+// These are defaults for every block in your theme
+.-xmasdev-block { }
+
+.-xmasdev-block-title { }
+
+.-xmasdev-block-content { @extend .-xmasdev-restricted-html-content; }
+
+// Make copies of the components for a diversity of block styles, like these
+.-xmasdev-content-block { }
+
+.-xmasdev-content-block-title { }
+
+.-xmasdev-content-block-content { @extend .-xmasdev-restricted-html-content; }
+
+.-xmasdev-sidebar-block { }
+
+.-xmasdev-sidebar-block-title { }
+
+.-xmasdev-sidebar-block-content { @extend .-xmasdev-restricted-html-content; }
+
+// Node Components
+// Make copies of these components for a diversity of node styles
+.-xmasdev-node { }
+
+.-xmasdev-node-picture { }
+
+.-xmasdev-node-title { } //meant for node listings, see also .-xmasdev-title
+
+.-xmasdev-node-meta {
+
+.-xmasdev-node-submitted { }
+
+.-xmasdev-node-terms { } }
+
+.-xmasdev-node-content { @extend .-xmasdev-full-html-content; }
+
+.-xmasdev-node-links {
+  li {
+    &.first { }
+    &.last { } } }
+
+.-xmasdev-node-sticky { }
+
+.-xmasdev-node-unpublished {
+    .unpublished { } }
+
+.-xmasdev-node-by-viewer { }
+
+.-xmasdev-node-preview { }
+
+// Profile Components
+.-xmasdev-profile { }
+
+.-xmasdev-profile-picture { }
+
+.-xmasdev-profile-category-header { }
+
+.-xmasdev-profile-category-wrapper { }
+
+.-xmasdev-profile-field-label { }
+
+.-xmasdev-profile-field-value { }
