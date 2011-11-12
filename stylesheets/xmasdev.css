@@ -1,3 +1,26 @@
+/* line 30, ../sass/_xmasdev-skin.scss */
+.-xmasdev-h2, .-xmasdev-full-html-content h2, .-xmasdev-node-content h2, .node .content h2 {
+  font-size: 1.286em;
+  font-weight: normal;
+  color: #0079bb;
+}
+
+/* line 40, ../sass/_xmasdev-skin.scss */
+.-xmasdev-p, .-xmasdev-full-html-content p, .-xmasdev-node-content p, .node .content p, .-xmasdev-restricted-html-content p, .-xmasdev-block-content p, .block .content p, .-xmasdev-content-block-content p, #content-content .block .content p, .-xmasdev-sidebar-block-content p, #sidebar-left .block .content p, #sidebar-right .block .content p {
+  margin: 0.7em 0;
+  /* TODO: vertical rhythm */
+}
+
+/* line 54, ../sass/_xmasdev-skin.scss */
+.-xmasdev-a, .-xmasdev-full-html-content a, .-xmasdev-node-content a, .node .content a, .-xmasdev-restricted-html-content a, .-xmasdev-block-content a, .block .content a, .-xmasdev-content-block-content a, #content-content .block .content a, .-xmasdev-sidebar-block-content a, #sidebar-left .block .content a, #sidebar-right .block .content a {
+  color: #0079bb;
+  text-decoration: none;
+}
+/* line 59, ../sass/_xmasdev-skin.scss */
+.-xmasdev-a:hover, .-xmasdev-full-html-content a:hover, .-xmasdev-node-content a:hover, .node .content a:hover, .-xmasdev-restricted-html-content a:hover, .-xmasdev-block-content a:hover, .block .content a:hover, .-xmasdev-content-block-content a:hover, #content-content .block .content a:hover, .-xmasdev-sidebar-block-content a:hover, #sidebar-left .block .content a:hover, #sidebar-right .block .content a:hover {
+  text-decoration: underline;
+}
+
 /* page.tpl.php */
 /* block.tpl.php */
 /* node.tpl.php */

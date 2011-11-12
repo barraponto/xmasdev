@@ -27,13 +27,19 @@ $xmas-red: #C32400;
 $xmas-white: #FFFFFF;
 
 //HTML Elements
-.-xmasdev-h2 { }
+.-xmasdev-h2 {
+  font-size: 1.286em; //18px if base font-size is 14px
+  font-weight: normal;
+  color: $xmas-blue;
+}
 
 .-xmasdev-h3 { }
 
 .-xmasdev-h4 { }
 
-.-xmasdev-p { }
+.-xmasdev-p {
+  margin: 0.7em 0; /* TODO: vertical rhythm */
+}
 
 .-xmasdev-li { }
 
@@ -46,9 +52,12 @@ $xmas-white: #FFFFFF;
 .-xmasdev-cite { }
 
 .-xmasdev-a {
+  color: $xmas-blue;
+  text-decoration: none;
   &:link { }
   &:visited { }
-  &:hover { }
+  &:hover {
+    text-decoration: underline; }
   &:focus { }
   &:active { } }
 
