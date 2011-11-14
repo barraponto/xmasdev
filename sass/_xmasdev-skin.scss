@@ -153,7 +153,9 @@ $xmasdev-white: #FFFFFF;
 
 .-xmasdev-header-region { }
 
-.-xmasdev-container { }
+.-xmasdev-container {
+  background: $xmasdev-white image-url('bk_content.jpg') 0 0 repeat-y; 
+}
 
 .-xmasdev-navigation { }
 
@@ -176,8 +178,7 @@ $xmasdev-white: #FFFFFF;
 
 .-xmasdev-main {
   width: 690px;
-  float: left;
-  background: $xmasdev-white image-url('bk_content.jpg') 0 0 repeat-y; }
+  float: left; }
 
 .-xmasdev-mission { }
 
@@ -281,12 +282,12 @@ $xmasdev-white: #FFFFFF;
   text-shadow: #00659F 1px 1px;
   font-size: 12px;
   font-weight: normal;
-  margin-left: 2px;
-  margin-right: -7px;
+  margin: 0 -7px 0 2px;
 }
 
 .-xmasdev-block-content { 
   @extend .-xmasdev-restricted-html-content;
+  margin-left: 1em;
   ul { 
     @include no-bullets; 
     padding: 0;
@@ -303,13 +304,15 @@ $xmasdev-white: #FFFFFF;
 
 .-xmasdev-content-block-title { }
 
-.-xmasdev-content-block-content { @extend .-xmasdev-restricted-html-content; }
+.-xmasdev-content-block-content { }
 
 .-xmasdev-sidebar-block { }
 
-.-xmasdev-sidebar-block-title { }
+.-xmasdev-sidebar-block-title {
+  font-size: 12px; }
 
-.-xmasdev-sidebar-block-content { @extend .-xmasdev-restricted-html-content; }
+.-xmasdev-sidebar-block-content {
+  font-size: 12px; }
 
 // Node Components
 // Make copies of these components for a diversity of node styles
