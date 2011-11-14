@@ -7,8 +7,8 @@ function xmasdev_preprocess_page(&$vars, $hook) {
   $vars['secondary_links'] = NULL;
   $vars['breadcrumb'] = NULL;
   $vars['feed_icons'] = NULL;
-//  $vars['messages'] = NULL; /* WARNING: turning off messages is a sign of bad judgement */
-//  $vars['tabs'] = NULL; /* WARNING: local tasks won't have any links to it */
+  $vars['messages'] = NULL; /* WARNING: turning off messages is a sign of bad judgement */
+  $vars['tabs'] = NULL; /* WARNING: local tasks won't have any links to it */
 
   //Checking whether 'submitted by' data is displayed
   if ($vars['node']) {
@@ -27,14 +27,23 @@ function xmasdev_preprocess_page(&$vars, $hook) {
 
 function xmasdev_preprocess_node(&$vars, $hook) {
   $vars['user_picture'] = NULL;
-  //$vars['links'] = NULL; /* WARNING: comments may not have any links to it */
   
-  $theme_settings = theme_get_settings();
-  $vars['display_submitted'] = $theme_settings['toggle_node_info_' . $vars['node']->type];
+  $node = $vars['node'];
 
-  if ($vars['teaser']) {
+  $theme_settings = theme_get_settings();
+  $vars['display_submitted'] = $theme_settings['toggle_node_info_' . $node->type];
+
+  if ($vars['teaser'] && $vars['display_submitted']) {
     $vars['date'] = format_date($vars['created'], 'custom', 'M \<\s\p\a\n\>j\<\/\s\p\a\n\>');
   }
+  else { 
+    $vars['date'] = FALSE;
+  }
+
+  if (!empty($node->links['node_read_more'])) {
+    $node->links['node_read_more']['title'] .= ' »';
+  }
+  $vars['links'] = !empty($node->links) ? theme('links', $node->links, array('class' => 'links inline')) : '';
 
   // Optionally, run node-type-specific preprocess functions, like
   // xmas_preprocess_node_page() or xmas_preprocess_node_story().
