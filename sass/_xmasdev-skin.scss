@@ -255,7 +255,9 @@ $xmasdev-white: #FFFFFF;
   line-height: 1.3em;
   .display-submitted & { 
     padding-left: 50px; }
-  a { text-decoration: none; }
+  a { 
+    @extend .-xmasdev-a;
+    text-decoration: none; }
 }
 
 .-xmasdev-content-area { }
@@ -343,7 +345,7 @@ $xmasdev-white: #FFFFFF;
     &.first { }
     &.last { }
     a { 
-      @extend .-xmas-a;
+      @extend .-xmasdev-a;
       color: $xmasdev-red;
       font-weight: bold; } } }
 
