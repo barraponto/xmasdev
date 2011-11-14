@@ -59,11 +59,11 @@
     </div>
   <?php endif; ?>
 
-  <h2><a href="<?php print $node_url ?>" title="<?php print $title ?>"><?php print $title ?></a></h2>
+  <h2 class="<?php if ($display_submitted) { print ' display-submitted'; } ?>"><a href="<?php print $node_url ?>" title="<?php print $title ?>"><?php print $title ?></a></h2>
 <?php endif; ?>
 
   <div class="meta">
-  <?php if ($submitted): ?>
+  <?php if ($display_submitted): ?>
     <span class="submitted"><?php
       print t('Submitted by !username on !datetime',
         array('!username' => $name, '!datetime' => $date)); ?>

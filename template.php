@@ -7,29 +7,31 @@ function xmasdev_preprocess_page(&$vars, $hook) {
   $vars['secondary_links'] = NULL;
   $vars['breadcrumb'] = NULL;
   $vars['feed_icons'] = NULL;
-  $vars['messages'] = NULL; /* WARNING: turning off messages is a sign of bad judgement */
-  $vars['tabs'] = NULL; /* WARNING: local tasks won't have any links to it */
+//  $vars['messages'] = NULL; /* WARNING: turning off messages is a sign of bad judgement */
+//  $vars['tabs'] = NULL; /* WARNING: local tasks won't have any links to it */
 
   //Checking whether 'submitted by' data is displayed
   if ($vars['node']) {
-    $theme_settings = variable_get('theme_settings', array());
+    $theme_settings = theme_get_settings();
 
     //add a display-submitted class
     if ($theme_settings['toggle_node_info_' . $vars['node']->type]) {
-      $vars['classes_array'][] = 'display-submitted';
+      $vars['body_classes'] .= ' display-submitted';
+      //show the created date
+      $vars['created'] = format_date($vars['node']->created, 'custom', 'M \<\s\p\a\n\>j\<\/\s\p\a\n\>');
     }
     
-    //show the created date
-    $vars['created'] = format_date($vars['node']->created, 'custom', 'M \<\s\p\a\n\>j\<\/\s\p\a\n\>');
   }
 
 }
 
 function xmasdev_preprocess_node(&$vars, $hook) {
   $vars['user_picture'] = NULL;
-  $vars['display_submitted'] = NULL;
   //$vars['links'] = NULL; /* WARNING: comments may not have any links to it */
   
+  $theme_settings = theme_get_settings();
+  $vars['display_submitted'] = $theme_settings['toggle_node_info_' . $vars['node']->type];
+
   if ($vars['teaser']) {
     $vars['date'] = format_date($vars['created'], 'custom', 'M \<\s\p\a\n\>j\<\/\s\p\a\n\>');
   }

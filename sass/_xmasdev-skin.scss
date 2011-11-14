@@ -19,18 +19,18 @@ $xmasdev-monospaced-typeface: "Courier New", "DejaVu Sans Mono", monospace;
 $xmasdev-base-font-size: 14px;
 
 // Colors
-$xmas-blue: #0079BB;
-$xmas-dark-blue: #1F1F30;
-$xmas-dark-grey: #333333;
-$xmas-light-grey: #666666;
-$xmas-red: #C32400;
-$xmas-white: #FFFFFF;
+$xmasdev-blue: #0079BB;
+$xmasdev-dark-blue: #1F1F30;
+$xmasdev-dark-grey: #333333;
+$xmasdev-light-grey: #666666;
+$xmasdev-red: #C32400;
+$xmasdev-white: #FFFFFF;
 
 //HTML Elements
 .-xmasdev-h2 {
   font-size: 1.286em; //18px if base font-size is 14px
   font-weight: normal;
-  color: $xmas-blue;
+  color: $xmasdev-blue;
 }
 
 .-xmasdev-h3 { }
@@ -52,7 +52,7 @@ $xmas-white: #FFFFFF;
 .-xmasdev-cite { }
 
 .-xmasdev-a {
-  color: $xmas-blue;
+  color: $xmasdev-blue;
   text-decoration: none;
   &:link { }
   &:visited { }
@@ -85,8 +85,12 @@ $xmas-white: #FFFFFF;
   li { @extend .-xmasdev-li; }
   ul { @extend .-xmasdev-ul; }
   ol { @extend .-xmasdev-ol; }
-  pre { @extend .-xmasdev-pre; }
-  code { @extend .-xmasdev-code; }
+  pre { 
+  font-family: "Courier New", "DejaVu Sans Mono", monospace;
+  @extend .-xmasdev-pre; }
+  code { 
+  font-family: "Courier New", "DejaVu Sans Mono", monospace;
+  @extend .-xmasdev-code; }
   blockquote { @extend .-xmasdev-blockquote; }
   cite { @extend .-xmasdev-cite; }
   a { @extend .-xmasdev-a; }
@@ -103,10 +107,12 @@ $xmas-white: #FFFFFF;
 
 // Page Components
 .-xmasdev-body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 14px;
   width: 960px;
   margin: 0 auto;
-  background: image-url('bk_body.jpg') no-repeat scroll top center $xmas-dark-blue;
-  color: $xmas-dark-grey;
+  background: image-url('bk_body.jpg') no-repeat scroll top center $xmasdev-dark-blue;
+  color: $xmasdev-dark-grey;
   line-height: 135%; /* TODO: vertical rhythm */ }
 
 .-xmasdev-skip-link { }
@@ -136,7 +142,7 @@ $xmas-white: #FFFFFF;
   a { 
     font-weight: normal;
     line-height: 25px; /* TODO: vertical rhythm */
-    @include link-colors($xmas-white); } }
+    @include link-colors($xmasdev-white); } }
 
 .-xmasdev-site-slogan {
   padding: 10px 0; /* TODO: vertical rhythm */
@@ -171,7 +177,7 @@ $xmas-white: #FFFFFF;
 .-xmasdev-main {
   width: 690px;
   float: left;
-  background: $xmas-white image-url('bk_content.jpg') 0 0 repeat-y; }
+  background: $xmasdev-white image-url('bk_content.jpg') 0 0 repeat-y; }
 
 .-xmasdev-mission { }
 
@@ -189,7 +195,7 @@ $xmas-white: #FFFFFF;
     height: 35px;
     width: 70px;
     background: image-url('bk_date.png') 0 0 no-repeat;
-    color: $xmas-white;
+    color: $xmasdev-white;
     line-height: 25px; /* TODO: vertical rhythm */
     text-align: center;
     font-size: 0.786em; /* TODO: vertical rhythm */
@@ -244,15 +250,18 @@ $xmas-white: #FFFFFF;
   font-weight: normal;
   letter-spacing: -1px;
   padding-bottom: 25px; /* TODO: vertical rhythm */
+  margin-top: 0;
+  line-height: 1.3em;
   .display-submitted & { 
-    background: none; }
+    padding-left: 50px; }
+  a { text-decoration: none; }
 }
 
 .-xmasdev-content-area { }
 
 .-xmasdev-footer {
   padding: 65px 0 40px; /* TODO: vertical rhythm */
-  color: $xmas-light-grey;
+  color: $xmasdev-light-grey;
   background: image-url('bk_footer.jpg') 0 0 no-repeat;
   position: relative; /* TODO: layout */ }
 
@@ -286,8 +295,8 @@ $xmas-white: #FFFFFF;
     padding: 5px;
     border-bottom: 1px dotted #ccc; }
     a { 
-      color: $xmas-light-grey;
-      &:hover { color: $xmas-blue; } } }
+      color: $xmasdev-light-grey;
+      &:hover { color: $xmasdev-blue; } } }
 
 // Make copies of the components for a diversity of block styles, like these
 .-xmasdev-content-block { }
@@ -315,7 +324,7 @@ $xmas-white: #FFFFFF;
 
 .-xmasdev-node-title {
   @extend .-xmasdev-title;
-  .created ~ & { padding-left: 50px; }
+  &.display-submitted { padding-left: 50px; }
 } //meant for node listings, see also .-xmasdev-title
 
 .-xmasdev-node-meta {
@@ -332,7 +341,7 @@ $xmas-white: #FFFFFF;
     &.last { }
     a { 
       @extend .-xmas-a;
-      color: $xmas-red;
+      color: $xmasdev-red;
       font-weight: bold; } } }
 
 .-xmasdev-node-sticky { }
