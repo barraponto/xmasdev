@@ -1,14 +1,12 @@
 <?php
 
 function xmasdev_preprocess_page(&$vars, $hook) {
-  $vars['mission'] = NULL;
   $vars['search_box'] = NULL;
   $vars['primary_links'] = NULL;
   $vars['secondary_links'] = NULL;
   $vars['breadcrumb'] = NULL;
-  $vars['feed_icons'] = NULL;
-//  $vars['messages'] = NULL; /* WARNING: turning off messages is a sign of bad judgement */
-//  $vars['tabs'] = NULL; /* WARNING: local tasks won't have any links to it */
+  //$vars['messages'] = NULL; /* WARNING: turning off messages is a sign of bad judgement */
+  //$vars['tabs'] = NULL; /* WARNING: local tasks won't have any links to it */
 
   //Checking whether 'submitted by' data is displayed
   if ($vars['node']) {

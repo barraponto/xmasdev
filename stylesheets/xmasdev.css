@@ -113,13 +113,19 @@
   float: left;
 }
 
-/* line 193, ../sass/_xmasdev-skin.scss */
+/* line 188, ../sass/_xmasdev-skin.scss */
+.-xmasdev-mission, #mission {
+  margin: 0 auto 1em;
+  width: 635px;
+}
+
+/* line 195, ../sass/_xmasdev-skin.scss */
 .-xmasdev-content, #content {
   width: 635px;
   margin: 0 auto;
   position: relative;
 }
-/* line 197, ../sass/_xmasdev-skin.scss */
+/* line 199, ../sass/_xmasdev-skin.scss */
 .-xmasdev-content .created, #content .created {
   position: absolute;
   /* TODO: layout */
@@ -136,13 +142,13 @@
   /* TODO: vertical rhythm */
   text-transform: uppercase;
 }
-/* line 209, ../sass/_xmasdev-skin.scss */
+/* line 211, ../sass/_xmasdev-skin.scss */
 .-xmasdev-content .created span, #content .created span {
   font-weight: bold;
   font-size: 19px;
 }
 
-/* line 222, ../sass/_xmasdev-skin.scss */
+/* line 224, ../sass/_xmasdev-skin.scss */
 .-xmasdev-messages, #content .messages {
   list-style: none;
 }
@@ -153,7 +159,7 @@
   margin-left: 0px;
 }
 
-/* line 234, ../sass/_xmasdev-skin.scss */
+/* line 236, ../sass/_xmasdev-skin.scss */
 .-xmasdev-pager, #content .pager {
   *zoom: 1;
   text-align: left;
@@ -165,13 +171,13 @@
   display: table;
   clear: both;
 }
-/* line 238, ../sass/_xmasdev-skin.scss */
+/* line 240, ../sass/_xmasdev-skin.scss */
 .-xmasdev-pager li, #content .pager li {
   display: inline-block;
   padding: 0;
   margin: 0;
 }
-/* line 242, ../sass/_xmasdev-skin.scss */
+/* line 244, ../sass/_xmasdev-skin.scss */
 .-xmasdev-pager a, #content .pager a {
   background: url('../images/bk_page.png?1282244997') no-repeat center center;
   text-decoration: none;
@@ -179,22 +185,22 @@
   display: block;
   color: white;
 }
-/* line 248, ../sass/_xmasdev-skin.scss */
+/* line 250, ../sass/_xmasdev-skin.scss */
 .-xmasdev-pager a:hover, #content .pager a:hover {
   background: url('../images/bk_page_on.png?1282244997') no-repeat center center;
 }
-/* line 250, ../sass/_xmasdev-skin.scss */
+/* line 252, ../sass/_xmasdev-skin.scss */
 .-xmasdev-pager .pager-info, #content .pager .pager-info {
   margin-right: 0.5em;
 }
-/* line 252, ../sass/_xmasdev-skin.scss */
+/* line 254, ../sass/_xmasdev-skin.scss */
 .-xmasdev-pager .pager-current, #content .pager .pager-current {
   color: white;
   padding: 0.5em 0.75em;
   background: url('../images/bk_page_on.png?1282244997') no-repeat center center;
 }
 
-/* line 264, ../sass/_xmasdev-skin.scss */
+/* line 266, ../sass/_xmasdev-skin.scss */
 .-xmasdev-title, .-xmasdev-node-title, .node > h2, #page-title {
   background: url('../images/bk_line.jpg?1321085858') no-repeat scroll left bottom transparent;
   font-size: 1.786em;
@@ -206,19 +212,19 @@
   margin-top: 0;
   line-height: 1.3em;
 }
-/* line 272, ../sass/_xmasdev-skin.scss */
+/* line 274, ../sass/_xmasdev-skin.scss */
 .-xmasdev-title.display-submitted, .display-submitted.-xmasdev-node-title, .node > h2.display-submitted, .display-submitted#page-title {
   background: none;
   padding-left: 50px;
   margin-bottom: 0;
   padding-bottom: 0;
 }
-/* line 277, ../sass/_xmasdev-skin.scss */
+/* line 279, ../sass/_xmasdev-skin.scss */
 .-xmasdev-title a, .-xmasdev-node-title a, .node > h2 a, #page-title a {
   text-decoration: none;
 }
 
-/* line 284, ../sass/_xmasdev-skin.scss */
+/* line 286, ../sass/_xmasdev-skin.scss */
 .-xmasdev-footer, #footer-wrapper {
   padding: 65px 0 40px;
   /* TODO: vertical rhythm */
@@ -228,7 +234,7 @@
   /* TODO: layout */
 }
 
-/* line 298, ../sass/_xmasdev-skin.scss */
+/* line 300, ../sass/_xmasdev-skin.scss */
 .-xmasdev-block-title, .block > h2 {
   background: url('../images/bk_h2_right.png?1321085858') 0 0 no-repeat;
   height: 34px;
@@ -242,22 +248,22 @@
   margin: 0 -7px 0 2px;
 }
 
-/* line 322, ../sass/_xmasdev-skin.scss */
+/* line 324, ../sass/_xmasdev-skin.scss */
 .-xmasdev-sidebar-block, #sidebar-left .block, #sidebar-right .block {
   margin-bottom: 1em;
 }
 
-/* line 325, ../sass/_xmasdev-skin.scss */
+/* line 327, ../sass/_xmasdev-skin.scss */
 .-xmasdev-sidebar-block-title, #sidebar-left .block > h2, #sidebar-right .block > h2 {
   font-size: 12px;
 }
 
-/* line 328, ../sass/_xmasdev-skin.scss */
+/* line 330, ../sass/_xmasdev-skin.scss */
 .-xmasdev-sidebar-block-content, #sidebar-left .block .content, #sidebar-right .block .content {
   font-size: 12px;
   margin-left: 1em;
 }
-/* line 331, ../sass/_xmasdev-skin.scss */
+/* line 333, ../sass/_xmasdev-skin.scss */
 .-xmasdev-sidebar-block-content ul, #sidebar-left .block .content ul, #sidebar-right .block .content ul {
   list-style: none;
   padding: 0;
@@ -269,35 +275,43 @@
   list-style-type: none;
   margin-left: 0px;
 }
-/* line 335, ../sass/_xmasdev-skin.scss */
+/* line 337, ../sass/_xmasdev-skin.scss */
 .-xmasdev-sidebar-block-content li, #sidebar-left .block .content li, #sidebar-right .block .content li {
-  padding: 5px;
+  padding: 0 5px 5px;
+  margin: 5px 0;
   border-bottom: 1px dotted #ccc;
 }
-/* line 339, ../sass/_xmasdev-skin.scss */
+/* line 342, ../sass/_xmasdev-skin.scss */
 .-xmasdev-sidebar-block-content li:last-of-type, #sidebar-left .block .content li:last-of-type, #sidebar-right .block .content li:last-of-type, .-xmasdev-sidebar-block-content li.expanded, #sidebar-left .block .content li.expanded, #sidebar-right .block .content li.expanded {
+  padding-bottom: 0;
   border-bottom: none;
 }
-/* line 341, ../sass/_xmasdev-skin.scss */
-.-xmasdev-sidebar-block-content a, #sidebar-left .block .content a, #sidebar-right .block .content a {
+/* line 345, ../sass/_xmasdev-skin.scss */
+.-xmasdev-sidebar-block-content li:last-of-type + li, #sidebar-left .block .content li:last-of-type + li, #sidebar-right .block .content li:last-of-type + li, .-xmasdev-sidebar-block-content li.expanded + li, #sidebar-left .block .content li.expanded + li, #sidebar-right .block .content li.expanded + li {
+  padding-top: 5px;
+  border-top: 1px dotted #ccc;
+}
+/* line 348, ../sass/_xmasdev-skin.scss */
+.-xmasdev-sidebar-block-content li a, #sidebar-left .block .content li a, #sidebar-right .block .content li a {
   color: #666666;
 }
-/* line 343, ../sass/_xmasdev-skin.scss */
-.-xmasdev-sidebar-block-content a:hover, #sidebar-left .block .content a:hover, #sidebar-right .block .content a:hover {
+/* line 350, ../sass/_xmasdev-skin.scss */
+.-xmasdev-sidebar-block-content li a:hover, #sidebar-left .block .content li a:hover, #sidebar-right .block .content li a:hover {
   color: #0079bb;
 }
-/* line 344, ../sass/_xmasdev-skin.scss */
-.-xmasdev-sidebar-block-content ul, #sidebar-left .block .content ul, #sidebar-right .block .content ul {
+/* line 351, ../sass/_xmasdev-skin.scss */
+.-xmasdev-sidebar-block-content li ul, #sidebar-left .block .content li ul, #sidebar-right .block .content li ul {
+  margin-top: 5px;
   border-top: 1px dotted #CCCCCC;
   padding-left: 1em;
   margin-bottom: 0;
 }
-/* line 348, ../sass/_xmasdev-skin.scss */
-.-xmasdev-sidebar-block-content li, #sidebar-left .block .content li, #sidebar-right .block .content li {
+/* line 356, ../sass/_xmasdev-skin.scss */
+.-xmasdev-sidebar-block-content li li, #sidebar-left .block .content li li, #sidebar-right .block .content li li {
   padding-left: 0;
 }
 
-/* line 352, ../sass/_xmasdev-skin.scss */
+/* line 360, ../sass/_xmasdev-skin.scss */
 .-xmasdev-node, .node {
   background: url('../images/bk_line_ornament.jpg?1321085858') bottom left no-repeat;
   padding-bottom: 25px;
@@ -305,7 +319,7 @@
   position: relative;
 }
 
-/* line 363, ../sass/_xmasdev-skin.scss */
+/* line 371, ../sass/_xmasdev-skin.scss */
 .-xmasdev-node-title.display-submitted, .node > h2.display-submitted {
   background: none;
   margin-bottom: 0;
@@ -313,7 +327,7 @@
   padding-left: 50px;
 }
 
-/* line 370, ../sass/_xmasdev-skin.scss */
+/* line 378, ../sass/_xmasdev-skin.scss */
 .-xmasdev-node-meta, .node .meta {
   padding-left: 50px;
   padding-bottom: 2em;
@@ -323,7 +337,7 @@
   background: url('../images/bk_line.jpg?1321085858') no-repeat scroll left bottom transparent;
 }
 
-/* line 379, ../sass/_xmasdev-skin.scss */
+/* line 387, ../sass/_xmasdev-skin.scss */
 .-xmasdev-node-submitted, .node .submitted {
   display: inline-block;
   text-indent: 36px;
@@ -331,7 +345,12 @@
   background: url('../images/bk_bell.png?1282244997') no-repeat left center;
 }
 
-/* line 395, ../sass/_xmasdev-skin.scss */
+/* line 400, ../sass/_xmasdev-skin.scss */
+.-xmasdev-node-links li, .node .links li {
+  padding: 0;
+  margin: 0 1em 0 0;
+}
+/* line 405, ../sass/_xmasdev-skin.scss */
 .-xmasdev-node-links li a, .node .links li a {
   color: #c32400;
   font-weight: bold;
