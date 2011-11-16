@@ -127,7 +127,7 @@ $xmasdev-white: #FFFFFF;
 
 .-xmasdev-logo {
   float: left;
-}
+  margin-right: 1em; }
 
 .-xmasdev-name-and-slogan { 
   position: absolute; /* TODO: layout */
@@ -175,6 +175,7 @@ $xmasdev-white: #FFFFFF;
     &.expanded { } } }
 
 .-xmasdev-sidebar {
+  padding-top: 1.5em;
   width: 270px;
   float: left;
 } // by default both sidebars inherit these styles
