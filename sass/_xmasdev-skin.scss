@@ -125,7 +125,9 @@ $xmasdev-white: #FFFFFF;
 
 .-xmasdev-logo-title { } // usually a #logo-title wrapper div (YMMV)
 
-.-xmasdev-logo { }
+.-xmasdev-logo {
+  float: left;
+}
 
 .-xmasdev-name-and-slogan { 
   position: absolute; /* TODO: layout */
@@ -142,6 +144,7 @@ $xmasdev-white: #FFFFFF;
   a { 
     font-weight: normal;
     line-height: 25px; /* TODO: vertical rhythm */
+    text-decoration: none;
     @include link-colors($xmasdev-white); } }
 
 .-xmasdev-site-slogan {
