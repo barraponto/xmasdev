@@ -240,47 +240,57 @@
   margin: 0 -7px 0 2px;
 }
 
-/* line 310, ../sass/_xmasdev-skin.scss */
-.-xmasdev-block-content, .block .content {
+/* line 323, ../sass/_xmasdev-skin.scss */
+.-xmasdev-sidebar-block-title, #sidebar-left .block > h2, #sidebar-right .block > h2 {
+  font-size: 12px;
+}
+
+/* line 326, ../sass/_xmasdev-skin.scss */
+.-xmasdev-sidebar-block-content, #sidebar-left .block .content, #sidebar-right .block .content {
+  font-size: 12px;
   margin-left: 1em;
 }
-/* line 313, ../sass/_xmasdev-skin.scss */
-.-xmasdev-block-content ul, .block .content ul {
+/* line 329, ../sass/_xmasdev-skin.scss */
+.-xmasdev-sidebar-block-content ul, #sidebar-left .block .content ul, #sidebar-right .block .content ul {
   list-style: none;
   padding: 0;
   margin: 0 0 20px 0;
 }
 /* line 11, ../../../../../../../.rvm/gems/ruby-1.9.2-p290@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
-.-xmasdev-block-content ul li, .block .content ul li {
+.-xmasdev-sidebar-block-content ul li, #sidebar-left .block .content ul li, #sidebar-right .block .content ul li {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0px;
 }
-/* line 317, ../sass/_xmasdev-skin.scss */
-.-xmasdev-block-content li, .block .content li {
+/* line 333, ../sass/_xmasdev-skin.scss */
+.-xmasdev-sidebar-block-content li, #sidebar-left .block .content li, #sidebar-right .block .content li {
   padding: 5px;
   border-bottom: 1px dotted #ccc;
 }
-/* line 320, ../sass/_xmasdev-skin.scss */
-.-xmasdev-block-content a, .block .content a {
+/* line 336, ../sass/_xmasdev-skin.scss */
+.-xmasdev-sidebar-block-content li.expanded, #sidebar-left .block .content li.expanded, #sidebar-right .block .content li.expanded {
+  border-bottom: none;
+}
+/* line 338, ../sass/_xmasdev-skin.scss */
+.-xmasdev-sidebar-block-content a, #sidebar-left .block .content a, #sidebar-right .block .content a {
   color: #666666;
 }
-/* line 322, ../sass/_xmasdev-skin.scss */
-.-xmasdev-block-content a:hover, .block .content a:hover {
+/* line 340, ../sass/_xmasdev-skin.scss */
+.-xmasdev-sidebar-block-content a:hover, #sidebar-left .block .content a:hover, #sidebar-right .block .content a:hover {
   color: #0079bb;
 }
-
-/* line 333, ../sass/_xmasdev-skin.scss */
-.-xmasdev-sidebar-block-title, #sidebar-left .block > h2, #sidebar-right .block > h2 {
-  font-size: 12px;
-}
-
-/* line 336, ../sass/_xmasdev-skin.scss */
-.-xmasdev-sidebar-block-content, #sidebar-left .block .content, #sidebar-right .block .content {
-  font-size: 12px;
-}
-
 /* line 341, ../sass/_xmasdev-skin.scss */
+.-xmasdev-sidebar-block-content ul, #sidebar-left .block .content ul, #sidebar-right .block .content ul {
+  border-top: 1px dotted #CCCCCC;
+  padding-left: 1em;
+  margin-bottom: 0;
+}
+/* line 345, ../sass/_xmasdev-skin.scss */
+.-xmasdev-sidebar-block-content li, #sidebar-left .block .content li, #sidebar-right .block .content li {
+  padding-left: 0;
+}
+
+/* line 349, ../sass/_xmasdev-skin.scss */
 .-xmasdev-node, .node {
   background: url('../images/bk_line_ornament.jpg?1321085858') bottom left no-repeat;
   padding-bottom: 25px;
@@ -288,7 +298,7 @@
   position: relative;
 }
 
-/* line 352, ../sass/_xmasdev-skin.scss */
+/* line 360, ../sass/_xmasdev-skin.scss */
 .-xmasdev-node-title.display-submitted, .node > h2.display-submitted {
   background: none;
   margin-bottom: 0;
@@ -296,7 +306,7 @@
   padding-left: 50px;
 }
 
-/* line 359, ../sass/_xmasdev-skin.scss */
+/* line 367, ../sass/_xmasdev-skin.scss */
 .-xmasdev-node-meta, .node .meta {
   padding-left: 50px;
   padding-bottom: 2em;
@@ -306,7 +316,7 @@
   background: url('../images/bk_line.jpg?1321085858') no-repeat scroll left bottom transparent;
 }
 
-/* line 368, ../sass/_xmasdev-skin.scss */
+/* line 376, ../sass/_xmasdev-skin.scss */
 .-xmasdev-node-submitted, .node .submitted {
   display: inline-block;
   text-indent: 36px;
@@ -314,7 +324,7 @@
   background: url('../images/bk_bell.png?1282244997') no-repeat left center;
 }
 
-/* line 383, ../sass/_xmasdev-skin.scss */
+/* line 391, ../sass/_xmasdev-skin.scss */
 .-xmasdev-node-links li a, .node .links li a {
   color: #c32400;
   font-weight: bold;

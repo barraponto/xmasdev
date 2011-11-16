@@ -309,17 +309,7 @@ $xmasdev-white: #FFFFFF;
 
 .-xmasdev-block-content { 
   @extend .-xmasdev-restricted-html-content;
-  margin-left: 1em;
-  ul { 
-    @include no-bullets; 
-    padding: 0;
-    margin: 0 0 20px 0; }
-  li {
-    padding: 5px;
-    border-bottom: 1px dotted #ccc; }
-    a { 
-      color: $xmasdev-light-grey;
-      &:hover { color: $xmasdev-blue; } } }
+    }
 
 // Make copies of the components for a diversity of block styles, like these
 .-xmasdev-content-block { }
@@ -334,7 +324,25 @@ $xmasdev-white: #FFFFFF;
   font-size: 12px; }
 
 .-xmasdev-sidebar-block-content {
-  font-size: 12px; }
+  font-size: 12px;
+  margin-left: 1em;
+  ul { 
+    @include no-bullets; 
+    padding: 0;
+    margin: 0 0 20px 0; }
+  li {
+    padding: 5px;
+    border-bottom: 1px dotted #ccc;
+    &.expanded { 
+      border-bottom: none; } }
+    a { 
+      color: $xmasdev-light-grey;
+      &:hover { color: $xmasdev-blue; } }
+    ul { 
+      border-top: 1px dotted #CCCCCC;
+      padding-left: 1em;
+      margin-bottom: 0; }
+    li { padding-left: 0; } }
 
 // Node Components
 // Make copies of these components for a diversity of node styles
