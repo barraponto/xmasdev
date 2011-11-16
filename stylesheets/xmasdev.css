@@ -1,36 +1,36 @@
-/* line 30, ../sass/_xmasdev-skin.scss */
+/* line 30, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-h2, .-xmasdev-full-html-content h2, .-xmasdev-node-content h2, .node .content h2 {
   font-size: 1.286em;
   font-weight: normal;
   color: #0079bb;
 }
 
-/* line 40, ../sass/_xmasdev-skin.scss */
+/* line 40, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-p, .-xmasdev-full-html-content p, .-xmasdev-node-content p, .node .content p, .-xmasdev-restricted-html-content p, .-xmasdev-block-content p, .block .content p {
   margin: 0.7em 0;
   /* TODO: vertical rhythm */
 }
 
-/* line 54, ../sass/_xmasdev-skin.scss */
-.-xmasdev-a, .-xmasdev-full-html-content a, .-xmasdev-node-content a, .node .content a, .-xmasdev-restricted-html-content a, .-xmasdev-block-content a, .block .content a, .-xmasdev-title a, .-xmasdev-node-title a, .node > h2 a, #page-title a, .-xmasdev-node-links li a, .node .links li a {
+/* line 54, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
+.-xmasdev-a, .-xmasdev-full-html-content a, .-xmasdev-node-content a, .node .content a, .-xmasdev-restricted-html-content a, .-xmasdev-block-content a, .block .content a, .-xmasdev-title a, .-xmasdev-node-title a, .node > h2 a, #page-title a, .-xmasdev-footer-message a, .footer-message a, .-xmasdev-node-links li a, .node .links li a {
   color: #0079bb;
   text-decoration: none;
 }
-/* line 59, ../sass/_xmasdev-skin.scss */
-.-xmasdev-a:hover, .-xmasdev-full-html-content a:hover, .-xmasdev-node-content a:hover, .node .content a:hover, .-xmasdev-restricted-html-content a:hover, .-xmasdev-block-content a:hover, .block .content a:hover, .-xmasdev-title a:hover, .-xmasdev-node-title a:hover, .node > h2 a:hover, #page-title a:hover, .-xmasdev-node-links li a:hover, .node .links li a:hover {
+/* line 59, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
+.-xmasdev-a:hover, .-xmasdev-full-html-content a:hover, .-xmasdev-node-content a:hover, .node .content a:hover, .-xmasdev-restricted-html-content a:hover, .-xmasdev-block-content a:hover, .block .content a:hover, .-xmasdev-title a:hover, .-xmasdev-node-title a:hover, .node > h2 a:hover, #page-title a:hover, .-xmasdev-footer-message a:hover, .footer-message a:hover, .-xmasdev-node-links li a:hover, .node .links li a:hover {
   text-decoration: underline;
 }
 
-/* line 88, ../sass/_xmasdev-skin.scss */
+/* line 88, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-full-html-content pre, .-xmasdev-node-content pre, .node .content pre {
   font-family: "Courier New", "DejaVu Sans Mono", monospace;
 }
-/* line 91, ../sass/_xmasdev-skin.scss */
+/* line 91, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-full-html-content code, .-xmasdev-node-content code, .node .content code {
   font-family: "Courier New", "DejaVu Sans Mono", monospace;
 }
 
-/* line 109, ../sass/_xmasdev-skin.scss */
+/* line 109, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-body, body {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 14px;
@@ -42,7 +42,7 @@
   /* TODO: vertical rhythm */
 }
 
-/* line 122, ../sass/_xmasdev-skin.scss */
+/* line 122, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-header, #header {
   height: 229px;
   /* TODO: vertical rhythm */
@@ -50,12 +50,12 @@
   /* TODO: layout */
 }
 
-/* line 128, ../sass/_xmasdev-skin.scss */
+/* line 128, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-logo, #logo {
   float: left;
 }
 
-/* line 132, ../sass/_xmasdev-skin.scss */
+/* line 132, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-name-and-slogan, #name-and-slogan {
   position: absolute;
   /* TODO: layout */
@@ -67,14 +67,14 @@
   /* fixes misterious width quirk */
 }
 
-/* line 139, ../sass/_xmasdev-skin.scss */
+/* line 139, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-site-name, #site-name {
   letter-spacing: -1px;
   font-size: 2.429em;
   background-image: none;
   padding: 0;
 }
-/* line 144, ../sass/_xmasdev-skin.scss */
+/* line 144, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-site-name a, #site-name a {
   font-weight: normal;
   line-height: 25px;
@@ -83,7 +83,7 @@
   color: white;
 }
 
-/* line 150, ../sass/_xmasdev-skin.scss */
+/* line 150, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-site-slogan, #site-slogan {
   padding: 10px 0;
   /* TODO: vertical rhythm */
@@ -93,31 +93,31 @@
   /* TODO: color palette */
 }
 
-/* line 159, ../sass/_xmasdev-skin.scss */
+/* line 159, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-container, #container {
   background: white url('../images/bk_content.jpg?1321085858') 0 0 repeat-y;
 }
 
-/* line 177, ../sass/_xmasdev-skin.scss */
+/* line 177, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-sidebar, #sidebar-left, #sidebar-right {
   width: 270px;
   float: left;
 }
 
-/* line 182, ../sass/_xmasdev-skin.scss */
+/* line 182, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-main, #main {
   padding-top: 1.5em;
   width: 690px;
   float: left;
 }
 
-/* line 192, ../sass/_xmasdev-skin.scss */
+/* line 192, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-content, #content {
   width: 635px;
   margin: 0 auto;
   position: relative;
 }
-/* line 196, ../sass/_xmasdev-skin.scss */
+/* line 196, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-content .created, #content .created {
   position: absolute;
   /* TODO: layout */
@@ -134,43 +134,43 @@
   /* TODO: vertical rhythm */
   text-transform: uppercase;
 }
-/* line 208, ../sass/_xmasdev-skin.scss */
+/* line 208, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-content .created span, #content .created span {
   font-weight: bold;
   font-size: 19px;
   vertical-align: middle;
 }
 
-/* line 222, ../sass/_xmasdev-skin.scss */
+/* line 222, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-messages, #content .messages {
   list-style: none;
 }
-/* line 11, ../../../../../../../.rvm/gems/ruby-1.9.2-p290@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
+/* line 11, /home/barraponto/.rvm/gems/ruby-1.9.2-p290@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
 .-xmasdev-messages li, #content .messages li {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0px;
 }
 
-/* line 234, ../sass/_xmasdev-skin.scss */
+/* line 234, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-pager, #content .pager {
   *zoom: 1;
   text-align: left;
   padding: 0;
 }
-/* line 38, ../../../../../../../.rvm/gems/ruby-1.9.2-p290@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, /home/barraponto/.rvm/gems/ruby-1.9.2-p290@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .-xmasdev-pager:after, #content .pager:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 238, ../sass/_xmasdev-skin.scss */
+/* line 238, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-pager li, #content .pager li {
   display: inline-block;
   padding: 0;
   margin: 0;
 }
-/* line 242, ../sass/_xmasdev-skin.scss */
+/* line 242, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-pager a, #content .pager a {
   background: url('../images/bk_page.png?1282244997') no-repeat center center;
   text-decoration: none;
@@ -178,22 +178,22 @@
   display: block;
   color: white;
 }
-/* line 248, ../sass/_xmasdev-skin.scss */
+/* line 248, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-pager a:hover, #content .pager a:hover {
   background: url('../images/bk_page_on.png?1282244997') no-repeat center center;
 }
-/* line 250, ../sass/_xmasdev-skin.scss */
+/* line 250, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-pager .pager-info, #content .pager .pager-info {
   margin-right: 0.5em;
 }
-/* line 252, ../sass/_xmasdev-skin.scss */
+/* line 252, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-pager .pager-current, #content .pager .pager-current {
   color: white;
   padding: 0.5em 0.75em;
   background: url('../images/bk_page_on.png?1282244997') no-repeat center center;
 }
 
-/* line 264, ../sass/_xmasdev-skin.scss */
+/* line 264, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-title, .-xmasdev-node-title, .node > h2, #page-title {
   background: url('../images/bk_line.jpg?1321085858') no-repeat scroll left bottom transparent;
   font-size: 1.786em;
@@ -205,19 +205,19 @@
   margin-top: 0;
   line-height: 1.3em;
 }
-/* line 272, ../sass/_xmasdev-skin.scss */
+/* line 272, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-title.display-submitted, .display-submitted.-xmasdev-node-title, .node > h2.display-submitted, .display-submitted#page-title {
   background: none;
   padding-left: 50px;
   margin-bottom: 0;
   padding-bottom: 0;
 }
-/* line 277, ../sass/_xmasdev-skin.scss */
+/* line 277, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-title a, .-xmasdev-node-title a, .node > h2 a, #page-title a {
   text-decoration: none;
 }
 
-/* line 284, ../sass/_xmasdev-skin.scss */
+/* line 284, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-footer, #footer-wrapper {
   padding: 65px 0 40px;
   /* TODO: vertical rhythm */
@@ -227,7 +227,7 @@
   /* TODO: layout */
 }
 
-/* line 296, ../sass/_xmasdev-skin.scss */
+/* line 298, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-block-title, .block > h2 {
   background: url('../images/bk_h2_right.png?1321085858') 0 0 no-repeat;
   height: 34px;
@@ -241,47 +241,47 @@
   margin: 0 -7px 0 2px;
 }
 
-/* line 309, ../sass/_xmasdev-skin.scss */
+/* line 311, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-block-content, .block .content {
   margin-left: 1em;
 }
-/* line 312, ../sass/_xmasdev-skin.scss */
+/* line 314, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-block-content ul, .block .content ul {
   list-style: none;
   padding: 0;
   margin: 0 0 20px 0;
 }
-/* line 11, ../../../../../../../.rvm/gems/ruby-1.9.2-p290@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
+/* line 11, /home/barraponto/.rvm/gems/ruby-1.9.2-p290@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
 .-xmasdev-block-content ul li, .block .content ul li {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0px;
 }
-/* line 316, ../sass/_xmasdev-skin.scss */
+/* line 318, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-block-content li, .block .content li {
   padding: 5px;
   border-bottom: 1px dotted #ccc;
 }
-/* line 319, ../sass/_xmasdev-skin.scss */
+/* line 321, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-block-content a, .block .content a {
   color: #666666;
 }
-/* line 321, ../sass/_xmasdev-skin.scss */
+/* line 323, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-block-content a:hover, .block .content a:hover {
   color: #0079bb;
 }
 
-/* line 332, ../sass/_xmasdev-skin.scss */
+/* line 334, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-sidebar-block-title, #sidebar-left .block > h2, #sidebar-right .block > h2 {
   font-size: 12px;
 }
 
-/* line 335, ../sass/_xmasdev-skin.scss */
+/* line 337, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-sidebar-block-content, #sidebar-left .block .content, #sidebar-right .block .content {
   font-size: 12px;
 }
 
-/* line 340, ../sass/_xmasdev-skin.scss */
+/* line 342, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-node, .node {
   background: url('../images/bk_line_ornament.jpg?1321085858') bottom left no-repeat;
   padding-bottom: 25px;
@@ -289,7 +289,7 @@
   position: relative;
 }
 
-/* line 351, ../sass/_xmasdev-skin.scss */
+/* line 353, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-node-title.display-submitted, .node > h2.display-submitted {
   background: none;
   margin-bottom: 0;
@@ -297,7 +297,7 @@
   padding-left: 50px;
 }
 
-/* line 358, ../sass/_xmasdev-skin.scss */
+/* line 360, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-node-meta, .node .meta {
   padding-left: 50px;
   padding-bottom: 2em;
@@ -307,7 +307,7 @@
   background: url('../images/bk_line.jpg?1321085858') no-repeat scroll left bottom transparent;
 }
 
-/* line 367, ../sass/_xmasdev-skin.scss */
+/* line 369, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-node-submitted, .node .submitted {
   display: inline-block;
   text-indent: 36px;
@@ -315,7 +315,7 @@
   background: url('../images/bk_bell.png?1282244997') no-repeat left center;
 }
 
-/* line 382, ../sass/_xmasdev-skin.scss */
+/* line 384, /home/barraponto/Web/compass/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-node-links li a, .node .links li a {
   color: #c32400;
   font-weight: bold;

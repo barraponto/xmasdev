@@ -287,7 +287,9 @@ $xmasdev-white: #FFFFFF;
   background: image-url('bk_footer.jpg') 0 0 no-repeat;
   position: relative; /* TODO: layout */ }
 
-.-xmasdev-footer-message { }
+.-xmasdev-footer-message {
+  a { @extend .-xmasdev-a; }
+}
 
 // Block Components
 // These are defaults for every block in your theme

@@ -61,10 +61,10 @@ ul.secondary-links  { @extend .-xmasdev-menu; }
 
 #footer-wrapper { @extend .-xmasdev-footer; }
 
- //Drupal will print the footer message right away, but theming the
+//Drupal will print the footer message right away, but theming the
 //whole region isn't a good idea. Copy page.tpl.php to your theme and
 //edit it to wrap the $footer_message variable
-//@extend .-xmasdev-footer-message;
+.footer-message { @extend .-xmasdev-footer-message; }
 
 
 /* block.tpl.php */
