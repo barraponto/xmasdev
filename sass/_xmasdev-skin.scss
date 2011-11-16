@@ -183,14 +183,19 @@ $xmasdev-white: #FFFFFF;
 .-xmasdev-main {
   padding-top: 1.5em;
   width: 690px;
-  float: left; }
+  float: left;
+  &.with-breadcrumb { 
+    padding-top: 0; } }
 
 .-xmasdev-mission {
   margin: 0 auto 1em; 
   width: 635px; }
 
 .-xmasdev-breadcrumb {
-  a { } }
+  width: 635px;
+  margin: 0 auto;
+  line-height: 1em;
+  a { @extend .-xmasdev-a; } }
 
 .-xmasdev-content {
   width: 635px;
@@ -281,7 +286,11 @@ $xmasdev-white: #FFFFFF;
     text-decoration: none; }
 }
 
-.-xmasdev-content-area { }
+.-xmasdev-content-area {
+  .page-admin & {
+    @extend .-xmasdev-full-html-content;
+  }
+}
 
 .-xmasdev-footer {
   padding: 65px 0 40px; /* TODO: vertical rhythm */

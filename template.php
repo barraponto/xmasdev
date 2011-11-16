@@ -4,7 +4,7 @@ function xmasdev_preprocess_page(&$vars, $hook) {
   $vars['search_box'] = NULL;
   $vars['primary_links'] = NULL;
   $vars['secondary_links'] = NULL;
-  $vars['breadcrumb'] = NULL;
+  //$vars['breadcrumb'] = NULL;
   //$vars['messages'] = NULL; /* WARNING: turning off messages is a sign of bad judgement */
   //$vars['tabs'] = NULL; /* WARNING: local tasks won't have any links to it */
 
@@ -18,9 +18,7 @@ function xmasdev_preprocess_page(&$vars, $hook) {
       //show the created date
       $vars['created'] = format_date($vars['node']->created, 'custom', 'M \<\s\p\a\n\>j\<\/\s\p\a\n\>');
     }
-    
   }
-
 }
 
 function xmasdev_preprocess_node(&$vars, $hook) {

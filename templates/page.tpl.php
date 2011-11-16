@@ -146,7 +146,7 @@
         </div> <!-- /sidebar-left -->
       <?php endif; ?>
 
-      <div id="main" class="column"><div id="main-squeeze">
+      <div id="main" class="column <?php if (!empty($breadcrumb)) print ' with-breadcrumb'; ?>"><div id="main-squeeze">
         <?php if (!empty($breadcrumb)): ?><div id="breadcrumb"><?php print $breadcrumb; ?></div><?php endif; ?>
         <?php if (!empty($mission)): ?><div id="mission"><?php print $mission; ?></div><?php endif; ?>
 
