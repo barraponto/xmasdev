@@ -161,6 +161,11 @@ function xmasdev_pager($tags = array(), $limit = 10, $element = 0, $parameters =
         'data' => $li_last,
       );
     }
+    $pager_info = array(
+      'class' => 'pager-info',
+      'data' => t('Page !current of !total', array('!current' => $pager_current, '!total' => $pager_max)),
+    );
+    array_unshift($items, $pager_info);
     return theme('item_list', $items, NULL, 'ul', array('class' => 'pager'));
   }
 }
