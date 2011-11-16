@@ -319,7 +319,8 @@ $xmasdev-white: #FFFFFF;
 
 .-xmasdev-content-block-content { }
 
-.-xmasdev-sidebar-block { }
+.-xmasdev-sidebar-block {
+  margin-bottom: 1em; }
 
 .-xmasdev-sidebar-block-title {
   font-size: 12px; }
@@ -334,6 +335,7 @@ $xmasdev-white: #FFFFFF;
   li {
     padding: 5px;
     border-bottom: 1px dotted #ccc;
+    &:last-of-type,
     &.expanded { 
       border-bottom: none; } }
     a { 
@@ -379,6 +381,7 @@ $xmasdev-white: #FFFFFF;
   text-indent: 36px;
   height: 22px;
   background: image-url('bk_bell.png') no-repeat left center;
+  a { @extend .-xmasdev-a; }
 }
 
 .-xmasdev-node-terms { } 

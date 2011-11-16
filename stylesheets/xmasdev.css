@@ -12,12 +12,12 @@
 }
 
 /* line 54, ../sass/_xmasdev-skin.scss */
-.-xmasdev-a, .-xmasdev-full-html-content a, .-xmasdev-node-content a, .node .content a, .-xmasdev-restricted-html-content a, .-xmasdev-block-content a, .block .content a, .-xmasdev-title a, .-xmasdev-node-title a, .node > h2 a, #page-title a, .-xmasdev-footer-message a, .footer-message a, .-xmasdev-node-links li a, .node .links li a {
+.-xmasdev-a, .-xmasdev-full-html-content a, .-xmasdev-node-content a, .node .content a, .-xmasdev-restricted-html-content a, .-xmasdev-block-content a, .block .content a, .-xmasdev-title a, .-xmasdev-node-title a, .node > h2 a, #page-title a, .-xmasdev-footer-message a, .footer-message a, .-xmasdev-node-submitted a, .node .submitted a, .-xmasdev-node-links li a, .node .links li a {
   color: #0079bb;
   text-decoration: none;
 }
 /* line 59, ../sass/_xmasdev-skin.scss */
-.-xmasdev-a:hover, .-xmasdev-full-html-content a:hover, .-xmasdev-node-content a:hover, .node .content a:hover, .-xmasdev-restricted-html-content a:hover, .-xmasdev-block-content a:hover, .block .content a:hover, .-xmasdev-title a:hover, .-xmasdev-node-title a:hover, .node > h2 a:hover, #page-title a:hover, .-xmasdev-footer-message a:hover, .footer-message a:hover, .-xmasdev-node-links li a:hover, .node .links li a:hover {
+.-xmasdev-a:hover, .-xmasdev-full-html-content a:hover, .-xmasdev-node-content a:hover, .node .content a:hover, .-xmasdev-restricted-html-content a:hover, .-xmasdev-block-content a:hover, .block .content a:hover, .-xmasdev-title a:hover, .-xmasdev-node-title a:hover, .node > h2 a:hover, #page-title a:hover, .-xmasdev-footer-message a:hover, .footer-message a:hover, .-xmasdev-node-submitted a:hover, .node .submitted a:hover, .-xmasdev-node-links li a:hover, .node .links li a:hover {
   text-decoration: underline;
 }
 
@@ -242,17 +242,22 @@
   margin: 0 -7px 0 2px;
 }
 
-/* line 324, ../sass/_xmasdev-skin.scss */
+/* line 322, ../sass/_xmasdev-skin.scss */
+.-xmasdev-sidebar-block, #sidebar-left .block, #sidebar-right .block {
+  margin-bottom: 1em;
+}
+
+/* line 325, ../sass/_xmasdev-skin.scss */
 .-xmasdev-sidebar-block-title, #sidebar-left .block > h2, #sidebar-right .block > h2 {
   font-size: 12px;
 }
 
-/* line 327, ../sass/_xmasdev-skin.scss */
+/* line 328, ../sass/_xmasdev-skin.scss */
 .-xmasdev-sidebar-block-content, #sidebar-left .block .content, #sidebar-right .block .content {
   font-size: 12px;
   margin-left: 1em;
 }
-/* line 330, ../sass/_xmasdev-skin.scss */
+/* line 331, ../sass/_xmasdev-skin.scss */
 .-xmasdev-sidebar-block-content ul, #sidebar-left .block .content ul, #sidebar-right .block .content ul {
   list-style: none;
   padding: 0;
@@ -264,35 +269,35 @@
   list-style-type: none;
   margin-left: 0px;
 }
-/* line 334, ../sass/_xmasdev-skin.scss */
+/* line 335, ../sass/_xmasdev-skin.scss */
 .-xmasdev-sidebar-block-content li, #sidebar-left .block .content li, #sidebar-right .block .content li {
   padding: 5px;
   border-bottom: 1px dotted #ccc;
 }
-/* line 337, ../sass/_xmasdev-skin.scss */
-.-xmasdev-sidebar-block-content li.expanded, #sidebar-left .block .content li.expanded, #sidebar-right .block .content li.expanded {
+/* line 339, ../sass/_xmasdev-skin.scss */
+.-xmasdev-sidebar-block-content li:last-of-type, #sidebar-left .block .content li:last-of-type, #sidebar-right .block .content li:last-of-type, .-xmasdev-sidebar-block-content li.expanded, #sidebar-left .block .content li.expanded, #sidebar-right .block .content li.expanded {
   border-bottom: none;
 }
-/* line 339, ../sass/_xmasdev-skin.scss */
+/* line 341, ../sass/_xmasdev-skin.scss */
 .-xmasdev-sidebar-block-content a, #sidebar-left .block .content a, #sidebar-right .block .content a {
   color: #666666;
 }
-/* line 341, ../sass/_xmasdev-skin.scss */
+/* line 343, ../sass/_xmasdev-skin.scss */
 .-xmasdev-sidebar-block-content a:hover, #sidebar-left .block .content a:hover, #sidebar-right .block .content a:hover {
   color: #0079bb;
 }
-/* line 342, ../sass/_xmasdev-skin.scss */
+/* line 344, ../sass/_xmasdev-skin.scss */
 .-xmasdev-sidebar-block-content ul, #sidebar-left .block .content ul, #sidebar-right .block .content ul {
   border-top: 1px dotted #CCCCCC;
   padding-left: 1em;
   margin-bottom: 0;
 }
-/* line 346, ../sass/_xmasdev-skin.scss */
+/* line 348, ../sass/_xmasdev-skin.scss */
 .-xmasdev-sidebar-block-content li, #sidebar-left .block .content li, #sidebar-right .block .content li {
   padding-left: 0;
 }
 
-/* line 350, ../sass/_xmasdev-skin.scss */
+/* line 352, ../sass/_xmasdev-skin.scss */
 .-xmasdev-node, .node {
   background: url('../images/bk_line_ornament.jpg?1321085858') bottom left no-repeat;
   padding-bottom: 25px;
@@ -300,7 +305,7 @@
   position: relative;
 }
 
-/* line 361, ../sass/_xmasdev-skin.scss */
+/* line 363, ../sass/_xmasdev-skin.scss */
 .-xmasdev-node-title.display-submitted, .node > h2.display-submitted {
   background: none;
   margin-bottom: 0;
@@ -308,7 +313,7 @@
   padding-left: 50px;
 }
 
-/* line 368, ../sass/_xmasdev-skin.scss */
+/* line 370, ../sass/_xmasdev-skin.scss */
 .-xmasdev-node-meta, .node .meta {
   padding-left: 50px;
   padding-bottom: 2em;
@@ -318,7 +323,7 @@
   background: url('../images/bk_line.jpg?1321085858') no-repeat scroll left bottom transparent;
 }
 
-/* line 377, ../sass/_xmasdev-skin.scss */
+/* line 379, ../sass/_xmasdev-skin.scss */
 .-xmasdev-node-submitted, .node .submitted {
   display: inline-block;
   text-indent: 36px;
@@ -326,7 +331,7 @@
   background: url('../images/bk_bell.png?1282244997') no-repeat left center;
 }
 
-/* line 392, ../sass/_xmasdev-skin.scss */
+/* line 395, ../sass/_xmasdev-skin.scss */
 .-xmasdev-node-links li a, .node .links li a {
   color: #c32400;
   font-weight: bold;
