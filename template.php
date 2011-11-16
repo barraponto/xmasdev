@@ -16,7 +16,7 @@ function xmasdev_preprocess_page(&$vars, $hook) {
 
     //add a display-submitted class
     if ($theme_settings['toggle_node_info_' . $vars['node']->type]) {
-      $vars['body_classes'] .= ' display-submitted';
+      $vars['title_classes'] = 'display-submitted';
       //show the created date
       $vars['created'] = format_date($vars['node']->created, 'custom', 'M \<\s\p\a\n\>j\<\/\s\p\a\n\>');
     }

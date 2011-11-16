@@ -62,17 +62,17 @@
   <h2 class="<?php if ($display_submitted) { print 'display-submitted'; } ?>"><a href="<?php print $node_url ?>" title="<?php print $title ?>"><?php print $title ?></a></h2>
 <?php endif; ?>
 
-  <div class="meta">
   <?php if ($display_submitted): ?>
-    <span class="submitted"><?php
-      print $submitted_text; ?>
+    <div class="meta">
+      <span class="submitted">
+        <?php print $submitted_text; ?>
       </span>
-  <?php endif; ?>
 
-  <?php if ($terms): ?>
-    <div class="terms terms-inline"><?php print $terms ?></div>
-  <?php endif;?>
+    <?php if ($terms): ?>
+      <div class="terms terms-inline"><?php print $terms ?></div>
+    <?php endif;?>
   </div>
+  <?php endif; ?>
 
   <div class="content">
     <?php print $content ?>
