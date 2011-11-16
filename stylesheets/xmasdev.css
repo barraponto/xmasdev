@@ -178,15 +178,11 @@
   line-height: 1.3em;
 }
 /* line 256, ../sass/_xmasdev-skin.scss */
-.display-submitted .-xmasdev-title, .display-submitted .-xmasdev-node-title, .display-submitted .node > h2, .display-submitted #page-title {
-  padding-left: 50px;
-}
-/* line 258, ../sass/_xmasdev-skin.scss */
 .-xmasdev-title a, .-xmasdev-node-title a, .node > h2 a, #page-title a {
   text-decoration: none;
 }
 
-/* line 265, ../sass/_xmasdev-skin.scss */
+/* line 263, ../sass/_xmasdev-skin.scss */
 .-xmasdev-footer, #footer-wrapper {
   padding: 65px 0 40px;
   /* TODO: vertical rhythm */
@@ -196,7 +192,7 @@
   /* TODO: layout */
 }
 
-/* line 277, ../sass/_xmasdev-skin.scss */
+/* line 275, ../sass/_xmasdev-skin.scss */
 .-xmasdev-block-title, .block > h2 {
   background: url('../images/bk_h2_right.png?1321085858') 0 0 no-repeat;
   height: 34px;
@@ -210,11 +206,11 @@
   margin: 0 -7px 0 2px;
 }
 
-/* line 290, ../sass/_xmasdev-skin.scss */
+/* line 288, ../sass/_xmasdev-skin.scss */
 .-xmasdev-block-content, .block .content {
   margin-left: 1em;
 }
-/* line 293, ../sass/_xmasdev-skin.scss */
+/* line 291, ../sass/_xmasdev-skin.scss */
 .-xmasdev-block-content ul, .block .content ul {
   list-style: none;
   padding: 0;
@@ -226,31 +222,31 @@
   list-style-type: none;
   margin-left: 0px;
 }
-/* line 297, ../sass/_xmasdev-skin.scss */
+/* line 295, ../sass/_xmasdev-skin.scss */
 .-xmasdev-block-content li, .block .content li {
   padding: 5px;
   border-bottom: 1px dotted #ccc;
 }
-/* line 300, ../sass/_xmasdev-skin.scss */
+/* line 298, ../sass/_xmasdev-skin.scss */
 .-xmasdev-block-content a, .block .content a {
   color: #666666;
 }
-/* line 302, ../sass/_xmasdev-skin.scss */
+/* line 300, ../sass/_xmasdev-skin.scss */
 .-xmasdev-block-content a:hover, .block .content a:hover {
   color: #0079bb;
 }
 
-/* line 313, ../sass/_xmasdev-skin.scss */
+/* line 311, ../sass/_xmasdev-skin.scss */
 .-xmasdev-sidebar-block-title, #sidebar-left .block > h2, #sidebar-right .block > h2 {
   font-size: 12px;
 }
 
-/* line 316, ../sass/_xmasdev-skin.scss */
+/* line 314, ../sass/_xmasdev-skin.scss */
 .-xmasdev-sidebar-block-content, #sidebar-left .block .content, #sidebar-right .block .content {
   font-size: 12px;
 }
 
-/* line 321, ../sass/_xmasdev-skin.scss */
+/* line 319, ../sass/_xmasdev-skin.scss */
 .-xmasdev-node, .node {
   background: url('../images/bk_line_ornament.jpg?1321085858') bottom left no-repeat;
   padding-bottom: 25px;
@@ -258,12 +254,15 @@
   position: relative;
 }
 
-/* line 332, ../sass/_xmasdev-skin.scss */
+/* line 330, ../sass/_xmasdev-skin.scss */
 .-xmasdev-node-title.display-submitted, .node > h2.display-submitted {
+  background: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
   padding-left: 50px;
 }
 
-/* line 347, ../sass/_xmasdev-skin.scss */
+/* line 349, ../sass/_xmasdev-skin.scss */
 .-xmasdev-node-links li a, .node .links li a {
   color: #c32400;
   font-weight: bold;

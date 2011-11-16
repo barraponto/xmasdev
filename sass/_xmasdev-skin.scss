@@ -253,8 +253,6 @@ $xmasdev-white: #FFFFFF;
   padding-bottom: 25px; /* TODO: vertical rhythm */
   margin-top: 0;
   line-height: 1.3em;
-  .display-submitted & { 
-    padding-left: 50px; }
   a { 
     @extend .-xmasdev-a;
     text-decoration: none; }
@@ -329,14 +327,18 @@ $xmasdev-white: #FFFFFF;
 
 .-xmasdev-node-title {
   @extend .-xmasdev-title;
-  &.display-submitted { padding-left: 50px; }
+  &.display-submitted { 
+    background: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-left: 50px; }
 } //meant for node listings, see also .-xmasdev-title
 
-.-xmasdev-node-meta {
+.-xmasdev-node-meta { }
 
 .-xmasdev-node-submitted { }
 
-.-xmasdev-node-terms { } }
+.-xmasdev-node-terms { } 
 
 .-xmasdev-node-content { @extend .-xmasdev-full-html-content; }
 

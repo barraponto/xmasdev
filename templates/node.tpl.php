@@ -53,7 +53,7 @@
 
 <?php if (!$page): ?>
     
-  <?php if ($date): ?>
+  <?php if ($display_submitted): ?>
     <div class="created">
       <?php print $date; ?>
     </div>
@@ -65,8 +65,7 @@
   <div class="meta">
   <?php if ($display_submitted): ?>
     <span class="submitted"><?php
-      print t('Submitted by !username on !datetime',
-        array('!username' => $name, '!datetime' => $date)); ?>
+      print $submitted_text; ?>
       </span>
   <?php endif; ?>
 

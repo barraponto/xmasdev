@@ -27,17 +27,23 @@ function xmasdev_preprocess_page(&$vars, $hook) {
 
 function xmasdev_preprocess_node(&$vars, $hook) {
   $vars['user_picture'] = NULL;
-  
+
   $node = $vars['node'];
 
   $theme_settings = theme_get_settings();
   $vars['display_submitted'] = $theme_settings['toggle_node_info_' . $node->type];
 
-  if ($vars['teaser'] && $vars['display_submitted']) {
+  if ($vars['display_submitted']) {
     $vars['date'] = format_date($vars['created'], 'custom', 'M \<\s\p\a\n\>j\<\/\s\p\a\n\>');
-  }
-  else { 
-    $vars['date'] = FALSE;
+    $vars['submitted_text'] = t('Posted by !user', array('!user' => $vars['name']));
+    if (!empty($vars['taxonomy'])) {
+      $taxonomy_links = array();
+      foreach ($vars['taxonomy'] as $term_link) {
+        $taxonomy_links[] = l($term_link['title'], $term_link['href'], $term_link);
+      }
+      $vars['submitted_text'] = t('Posted in !terms by !user', array('!terms' => implode(', ', $taxonomy_links), '!user' => $vars['name']));
+      $vars['terms'] = FALSE;
+    }
   }
 
   if (!empty($node->links['node_read_more'])) {
@@ -57,28 +63,3 @@ function xmasdev_preprocess_comment(&$vars, $hook) {
   $vars['picture'] = NULL;
 }
 
-function xmasdev_pager($tags = array(), $limit = 10, $element = 0, $parameters = array(), $quantity = 9) {
-  global $pager_total;
-
-  $li_previous = theme('pager_previous', (isset($tags[1]) ? $tags[1] : t('Newer')), $limit, $element, 1, $parameters);
-  $li_next = theme('pager_next', (isset($tags[3]) ? $tags[3] : t('Older')), $limit, $element, 1, $parameters);
-
-  if ($pager_total[$element] > 1) {
-
-    if ($li_previous) {
-      $items[] = array(
-        'class' => 'pager-previous', 
-        'data' => $li_previous,
-      );
-    }
-
-    // End generation.
-    if ($li_next) {
-      $items[] = array(
-        'class' => 'pager-next', 
-        'data' => $li_next,
-      );
-    }
-    return theme('item_list', $items, NULL, 'ul', array('class' => 'pager'));
-  }
-}
