@@ -114,12 +114,12 @@ function xmasdev_pager($tags = array(), $limit = 10, $element = 0, $parameters =
 
     // When there is more than one page, create the pager list.
     if ($i != $pager_max) {
-      if ($i > 1) {
-        $items[] = array(
-          'class' => 'pager-ellipsis', 
-          'data' => '…',
-        );
-      }
+      //if ($i > 1) {
+      //  $items[] = array(
+      //    'class' => 'pager-ellipsis', 
+      //    'data' => '…',
+      //  );
+      //}
       // Now generate the actual pager piece.
       for (; $i <= $pager_last && $i <= $pager_max; $i++) {
         if ($i < $pager_current) {
