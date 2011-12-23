@@ -1,4 +1,3 @@
-
 @import "xmasdev-skin";
 @import "_xmasdev-base";
 
@@ -20,8 +19,7 @@ body { @extend .-xmasdev-body; }
 
 #container { @extend .-xmasdev-container; }
 
-#navigation {
-  @extend .-xmasdev-navigation; }
+#navigation { @extend .-xmasdev-navigation; }
 
 ul.primary-links  {
   @extend .-xmasdev-menu;
