@@ -29,6 +29,18 @@ html.js #user-login li.openid-link { display:block; }
 #user-login li.user-link { display:none; }
 
 /**
+ * system/defaults.css ================================================
+ */
+.clear-block {
+  *zoom: 1;
+}
+.clear-block:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/**
  * system/system.css ==================================================
  */
 body.drag { cursor:move; }
