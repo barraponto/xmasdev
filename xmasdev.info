@@ -4,9 +4,38 @@ description = This is a raw, naked, bare Drupal theme. It inherits all of the de
 core = 6.x
 engine = phptemplate
 
-stylesheets[all][] = stylesheets/xmasdev.css
-
 regions[right] = Right sidebar
 regions[content] = Content
 regions[header] = Header
 regions[footer] = Footer
+
+;Stripping out most of core's CSS. color.css and locale.css are spared
+;because they are contained and don't get in the way. See Tao's readme
+;http://drupalcode.org/project/tao.git/blob/refs/heads/6.x-3.x:/README.md
+
+stylesheets[all][] = "admin.css"
+stylesheets[all][] = "block.css"
+stylesheets[all][] = "book.css"
+stylesheets[all][] = "comment.css"
+stylesheets[all][] = "dblog.css"
+stylesheets[all][] = "defaults.css"
+stylesheets[all][] = "forum.css"
+stylesheets[all][] = "help.css"
+stylesheets[all][] = "maintenance.css"
+stylesheets[all][] = "node.css"
+stylesheets[all][] = "openid.css"
+stylesheets[all][] = "poll.css"
+stylesheets[all][] = "profile.css"
+stylesheets[all][] = "search.css"
+stylesheets[all][] = "system.css"
+stylesheets[all][] = "system-menus.css"
+stylesheets[all][] = "taxonomy.css"
+stylesheets[all][] = "tracker.css"
+stylesheets[all][] = "update.css"
+stylesheets[all][] = "user.css"
+
+;Adding Eric Meyer's reset.css and a drupal.css reimplementing the bare
+;minimal css required for javascript features.
+stylesheets[all][] = stylesheets/reset.css
+stylesheets[all][] = stylesheets/drupal.css
+stylesheets[all][] = stylesheets/xmasdev.css
