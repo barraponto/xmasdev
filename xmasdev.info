@@ -34,8 +34,8 @@ stylesheets[all][] = "tracker.css"
 stylesheets[all][] = "update.css"
 stylesheets[all][] = "user.css"
 
-;Adding Eric Meyer's reset.css and a drupal.css reimplementing the bare
+;Adding normalize.css and a drupal.css reimplementing the bare
 ;minimal css required for javascript features.
-stylesheets[all][] = stylesheets/reset.css
+stylesheets[all][] = stylesheets/normalize.css
 stylesheets[all][] = stylesheets/drupal.css
 stylesheets[all][] = stylesheets/xmasdev.css
