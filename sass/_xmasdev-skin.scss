@@ -26,13 +26,41 @@ $xmasdev-light-grey: #666666;
 $xmasdev-red: #C32400;
 $xmasdev-white: #FFFFFF;
 
+// Xmas Patterns
+.-xmas-vertical-menu {
+    @include no-bullets;
+    padding: 0;
+    margin: 0 0 20px 0;
+    li { // Yes, every li, including sub menus
+      padding: 0 5px 5px;
+      margin: 5px 0;
+      border-bottom: 1px dotted #ccc;
+      &.first { }
+      &:last-of-type,
+      &.last,
+      &.expanded {
+        padding-bottom: 0;
+        border-bottom: none;
+        + li {
+          padding-top: 5px;
+          border-top: 1px dotted #ccc; } }
+      a {
+        color: $xmasdev-light-grey;
+        &:hover { color: $xmasdev-blue; } } }
+
+.-xmas-vertical-submenu {
+  margin-top: 5px;
+  border-top: 1px dotted #CCCCCC;
+  padding-left: 1em;
+  margin-bottom: 0; }
+    li { padding-left: 0; } }
+
 //HTML Elements
 .-xmasdev-h2 {
   // margin: 0.83em 0;
   font-size: 1.286em; //18px if base font-size is 14px
   font-weight: normal;
-  color: $xmasdev-blue;
-}
+  color: $xmasdev-blue; }
 
 .-xmasdev-h3 { }
 
@@ -162,12 +190,14 @@ $xmasdev-white: #FFFFFF;
 .-xmasdev-navigation { }
 
 .-xmasdev-menu { // by default, both menus inherit these styles
+  // @extend .-xmas-vertical-menu;
   > li { // use '>' to target only child items
     &.first { }
     &.last { }
     &.expanded { } } }
 
 .-xmasdev-submenu { // think expanded menus, not secondary menus
+    // @extend .-xmas-vertical-submenu;
     > li { // use '>' to target only child items
     &.first { }
     &.last { }
@@ -322,8 +352,7 @@ $xmasdev-white: #FFFFFF;
 }
 
 .-xmasdev-block-content { 
-  @extend .-xmasdev-restricted-html-content;
-    }
+  @extend .-xmasdev-restricted-html-content; }
 
 // Make copies of the components for a diversity of block styles, like these
 .-xmasdev-content-block { }
@@ -341,30 +370,9 @@ $xmasdev-white: #FFFFFF;
 .-xmasdev-sidebar-block-content {
   font-size: 12px;
   margin-left: 1em;
-  ul { 
-    @include no-bullets; 
-    padding: 0;
-    margin: 0 0 20px 0; }
-  li {
-    padding: 0 5px 5px;
-    margin: 5px 0;
-    border-bottom: 1px dotted #ccc;
-    &:last-of-type,
-    &.expanded {
-      padding-bottom: 0;
-      border-bottom: none;
-      + li { 
-        padding-top: 5px;
-        border-top: 1px dotted #ccc; } }
-    a { 
-      color: $xmasdev-light-grey;
-      &:hover { color: $xmasdev-blue; } }
-    ul { 
-      margin-top: 5px;
-      border-top: 1px dotted #CCCCCC;
-      padding-left: 1em;
-      margin-bottom: 0; }
-    li { padding-left: 0; } } }
+  ul {
+    @extend .-xmas-vertical-menu;
+    ul { @extend .-xmas-vertical-submenu; } } }
 
 // Node Components
 // Make copies of these components for a diversity of node styles
@@ -372,8 +380,7 @@ $xmasdev-white: #FFFFFF;
   background: image-url('bk_line_ornament.jpg') bottom left no-repeat;
   padding-bottom:25px;
   margin-bottom:20px;
-  position: relative;
-}
+  position: relative; }
 
 .-xmasdev-node-picture { }
 
