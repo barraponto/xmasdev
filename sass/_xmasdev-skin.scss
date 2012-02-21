@@ -228,7 +228,9 @@ $xmasdev-white: #FFFFFF;
 
 .-xmasdev-messages {
   @include no-bullets;
-  &.status { }
+  &.status {
+    background: none repeat scroll 0 0 #DDFFFF;
+    border: 1px solid #20F0C0; } /* TODO: just a placeholder */
   &.warning { }
   &.error { }
   &.help { }
