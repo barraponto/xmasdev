@@ -28,6 +28,7 @@ $xmasdev-white: #FFFFFF;
 
 //HTML Elements
 .-xmasdev-h2 {
+  // margin: 0.83em 0;
   font-size: 1.286em; //18px if base font-size is 14px
   font-weight: normal;
   color: $xmasdev-blue;
@@ -120,7 +121,7 @@ $xmasdev-white: #FFFFFF;
 .-xmasdev-page { }
 
 .-xmasdev-header {
-  height: 229px; /* TODO: vertical rhythm */
+  height: 206px; /* TODO: vertical rhythm */
   position: relative; /* TODO: layout */ }
 
 .-xmasdev-logo {
@@ -192,6 +193,7 @@ $xmasdev-white: #FFFFFF;
 .-xmasdev-breadcrumb {
   width: 635px;
   margin: 0 auto;
+  padding: 0.2em 0 0.5em;
   line-height: 1em;
   a { @extend .-xmasdev-a; } }
 
@@ -435,3 +437,4 @@ $xmasdev-white: #FFFFFF;
 .-xmasdev-profile-field-label { }
 
 .-xmasdev-profile-field-value { }
+
