@@ -1,36 +1,131 @@
-/* line 30, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
+/* Xmas patterns */
+.-xmas-vertical-menu, .-xmasdev-sidebar-block-content ul, #sidebar-left .block .content ul, #sidebar-right .block .content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+.-xmas-vertical-menu li, .-xmasdev-sidebar-block-content ul li, #sidebar-left .block .content ul li, #sidebar-right .block .content ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+.-xmas-vertical-menu li, .-xmasdev-sidebar-block-content ul li, #sidebar-left .block .content ul li, #sidebar-right .block .content ul li {
+  padding: 0 5px 5px;
+  margin: 5px 0;
+  border-bottom: 1px dotted #ccc;
+}
+.-xmas-vertical-menu li:last-of-type, .-xmasdev-sidebar-block-content ul li:last-of-type, #sidebar-left .block .content ul li:last-of-type, #sidebar-right .block .content ul li:last-of-type, .-xmas-vertical-menu li.last, .-xmasdev-sidebar-block-content ul li.last, #sidebar-left .block .content ul li.last, #sidebar-right .block .content ul li.last, .-xmas-vertical-menu li.expanded, .-xmasdev-sidebar-block-content ul li.expanded, #sidebar-left .block .content ul li.expanded, #sidebar-right .block .content ul li.expanded {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.-xmas-vertical-menu li:last-of-type + li, .-xmasdev-sidebar-block-content ul li:last-of-type + li, #sidebar-left .block .content ul li:last-of-type + li, #sidebar-right .block .content ul li:last-of-type + li, .-xmas-vertical-menu li.last + li, .-xmasdev-sidebar-block-content ul li.last + li, #sidebar-left .block .content ul li.last + li, #sidebar-right .block .content ul li.last + li, .-xmas-vertical-menu li.expanded + li, .-xmasdev-sidebar-block-content ul li.expanded + li, #sidebar-left .block .content ul li.expanded + li, #sidebar-right .block .content ul li.expanded + li {
+  padding-top: 5px;
+  border-top: 1px dotted #ccc;
+}
+.-xmas-vertical-menu li a, .-xmasdev-sidebar-block-content ul li a, #sidebar-left .block .content ul li a, #sidebar-right .block .content ul li a {
+  color: #666666;
+}
+.-xmas-vertical-menu li a:hover, .-xmasdev-sidebar-block-content ul li a:hover, #sidebar-left .block .content ul li a:hover, #sidebar-right .block .content ul li a:hover {
+  color: #0079bb;
+}
+
+.-xmas-vertical-submenu, .-xmasdev-sidebar-block-content ul ul, #sidebar-left .block .content ul ul, #sidebar-right .block .content ul ul {
+  margin-top: 5px;
+  border-top: 1px dotted #CCCCCC;
+  padding-left: 1em;
+  margin-bottom: 0;
+}
+.-xmas-vertical-submenu li, .-xmasdev-sidebar-block-content ul ul li, #sidebar-left .block .content ul ul li, #sidebar-right .block .content ul ul li {
+  padding-left: 0;
+}
+
+/* Xmas HTML elements styles */
 .-xmasdev-h2, .-xmasdev-full-html-content h2, .page-admin .-xmasdev-content-area h2, .page-admin #content-content h2, .-xmasdev-node-content h2, .node .content h2 {
-  font-size: 1.286em;
+  font-size: 1.5em;
+  margin: 0.67em 0;
   font-weight: normal;
   color: #0079bb;
 }
 
-/* line 40, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
+.-xmasdev-h3, .-xmasdev-full-html-content h3, .page-admin .-xmasdev-content-area h3, .page-admin #content-content h3, .-xmasdev-node-content h3, .node .content h3, .-xmasdev-restricted-html-content h3, .-xmasdev-block-content h3, .block .content h3 {
+  font-size: 1.286em;
+  margin: 0.83em 0;
+  font-weight: normal;
+  color: #0079bb;
+}
+
+.-xmasdev-h4, .-xmasdev-full-html-content h4, .page-admin .-xmasdev-content-area h4, .page-admin #content-content h4, .-xmasdev-node-content h4, .node .content h4, .-xmasdev-restricted-html-content h4, .-xmasdev-block-content h4, .block .content h4 {
+  font-size: 1em;
+  margin: 1em 0;
+  font-weight: normal;
+  color: #0079bb;
+}
+
+.-xmasdev-h5, .-xmasdev-full-html-content h5, .page-admin .-xmasdev-content-area h5, .page-admin #content-content h5, .-xmasdev-node-content h5, .node .content h5, .-xmasdev-restricted-html-content h5, .-xmasdev-block-content h5, .block .content h5 {
+  font-size: 1em;
+  font-style: italic;
+  margin: 1em 0;
+  font-weight: normal;
+}
+
+.-xmasdev-h6, .-xmasdev-full-html-content h6, .page-admin .-xmasdev-content-area h6, .page-admin #content-content h6, .-xmasdev-node-content h6, .node .content h6, .-xmasdev-restricted-html-content h6, .-xmasdev-block-content h6, .block .content h6 {
+  font-size: 0.8em;
+  font-style: italic;
+  margin: 1.25em 0;
+  font-weight: normal;
+}
+
 .-xmasdev-p, .-xmasdev-full-html-content p, .page-admin .-xmasdev-content-area p, .page-admin #content-content p, .-xmasdev-node-content p, .node .content p, .-xmasdev-restricted-html-content p, .-xmasdev-block-content p, .block .content p {
   margin: 0.7em 0;
   /* TODO: vertical rhythm */
 }
 
-/* line 54, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-a, .-xmasdev-full-html-content a, .page-admin .-xmasdev-content-area a, .page-admin #content-content a, .-xmasdev-node-content a, .node .content a, .-xmasdev-restricted-html-content a, .-xmasdev-block-content a, .block .content a, .-xmasdev-breadcrumb a, #breadcrumb a, .-xmasdev-title a, .-xmasdev-node-title a, .node > h2 a, #page-title a, .-xmasdev-footer-message a, .footer-message a, .-xmasdev-node-submitted a, .node .submitted a, .-xmasdev-node-links li a, .node .links li a {
   color: #0079bb;
   text-decoration: none;
 }
-/* line 59, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-a:hover, .-xmasdev-full-html-content a:hover, .page-admin .-xmasdev-content-area a:hover, .page-admin #content-content a:hover, .-xmasdev-node-content a:hover, .node .content a:hover, .-xmasdev-restricted-html-content a:hover, .-xmasdev-block-content a:hover, .block .content a:hover, .-xmasdev-breadcrumb a:hover, #breadcrumb a:hover, .-xmasdev-title a:hover, .-xmasdev-node-title a:hover, .node > h2 a:hover, #page-title a:hover, .-xmasdev-footer-message a:hover, .footer-message a:hover, .-xmasdev-node-submitted a:hover, .node .submitted a:hover, .-xmasdev-node-links li a:hover, .node .links li a:hover {
   text-decoration: underline;
 }
 
-/* line 88, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
+.-xmasdev-table, .-xmasdev-full-html-content table, .page-admin .-xmasdev-content-area table, .page-admin #content-content table, .-xmasdev-node-content table, .node .content table {
+  width: 100%;
+}
+.-xmasdev-table thead, .-xmasdev-full-html-content table thead, .page-admin .-xmasdev-content-area table thead, .page-admin #content-content table thead, .-xmasdev-node-content table thead, .node .content table thead {
+  background: url('../images/tableheader.png?1329916984') no-repeat top left;
+}
+
+.-xmasdev-table-row, .-xmasdev-full-html-content tr, .page-admin .-xmasdev-content-area tr, .page-admin #content-content tr, .-xmasdev-node-content tr, .node .content tr {
+  line-height: 1.8em;
+}
+thead .-xmasdev-table-row, thead .-xmasdev-full-html-content tr, .-xmasdev-full-html-content thead tr, thead .page-admin .-xmasdev-content-area tr, .page-admin .-xmasdev-content-area thead tr, thead .page-admin #content-content tr, .page-admin #content-content thead tr, thead .-xmasdev-node-content tr, .-xmasdev-node-content thead tr, thead .node .content tr, .node .content thead tr {
+  line-height: 2.4em;
+}
+tbody .-xmasdev-table-row, tbody .-xmasdev-full-html-content tr, .-xmasdev-full-html-content tbody tr, tbody .page-admin .-xmasdev-content-area tr, .page-admin .-xmasdev-content-area tbody tr, tbody .page-admin #content-content tr, .page-admin #content-content tbody tr, tbody .-xmasdev-node-content tr, .-xmasdev-node-content tbody tr, tbody .node .content tr, .node .content tbody tr {
+  border-bottom: 1px dotted #ccc;
+  border-left: 2em solid transparent;
+  border-right: 2em solid transparent;
+}
+.-xmasdev-table-row th, .-xmasdev-full-html-content tr th, .page-admin .-xmasdev-content-area tr th, .page-admin #content-content tr th, .-xmasdev-node-content tr th, .node .content tr th {
+  color: white;
+  text-align: left;
+}
+.-xmasdev-table-row th:first-child, .-xmasdev-full-html-content tr th:first-child, .page-admin .-xmasdev-content-area tr th:first-child, .page-admin #content-content tr th:first-child, .-xmasdev-node-content tr th:first-child, .node .content tr th:first-child {
+  padding-left: 3.5em;
+}
+.-xmasdev-table-row td:first-child, .-xmasdev-full-html-content tr td:first-child, .page-admin .-xmasdev-content-area tr td:first-child, .page-admin #content-content tr td:first-child, .-xmasdev-node-content tr td:first-child, .node .content tr td:first-child {
+  padding-left: 2.5em;
+}
+
+/* Xmas filtered content styles */
 .-xmasdev-full-html-content pre, .page-admin .-xmasdev-content-area pre, .page-admin #content-content pre, .-xmasdev-node-content pre, .node .content pre {
   font-family: "Courier New", "DejaVu Sans Mono", monospace;
 }
-/* line 91, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-full-html-content code, .page-admin .-xmasdev-content-area code, .page-admin #content-content code, .-xmasdev-node-content code, .node .content code {
   font-family: "Courier New", "DejaVu Sans Mono", monospace;
 }
 
-/* line 109, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
+/* Xmas page.tpl.php styles */
 .-xmasdev-body, body {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 14px;
@@ -42,21 +137,18 @@
   /* TODO: vertical rhythm */
 }
 
-/* line 122, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-header, #header {
-  height: 229px;
+  height: 206px;
   /* TODO: vertical rhythm */
   position: relative;
   /* TODO: layout */
 }
 
-/* line 126, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-logo, #logo {
   float: left;
   margin-right: 1em;
 }
 
-/* line 130, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-name-and-slogan {
   position: absolute;
   /* TODO: layout */
@@ -68,14 +160,12 @@
   /* fixes misterious width quirk */
 }
 
-/* line 137, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-site-name, #site-name {
   letter-spacing: -1px;
   font-size: 2.429em;
   background-image: none;
   padding: 0;
 }
-/* line 142, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-site-name a, #site-name a {
   font-weight: normal;
   line-height: 25px;
@@ -84,7 +174,6 @@
   color: white;
 }
 
-/* line 148, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-site-slogan, #site-slogan {
   padding: 10px 0;
   /* TODO: vertical rhythm */
@@ -94,49 +183,42 @@
   /* TODO: color palette */
 }
 
-/* line 157, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-container, #container {
   background: white url('../images/bk_content.jpg?1323816876') 0 0 repeat-y;
 }
 
-/* line 175, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-sidebar, #sidebar-left, #sidebar-right {
   padding-top: 1.5em;
   width: 270px;
   float: left;
 }
 
-/* line 181, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-main, #main {
   padding-top: 1.5em;
   width: 690px;
   float: left;
 }
-/* line 185, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-main.with-breadcrumb, .with-breadcrumb#main {
   padding-top: 0;
 }
 
-/* line 188, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-mission, #mission {
   margin: 0 auto 1em;
   width: 635px;
 }
 
-/* line 192, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-breadcrumb, #breadcrumb {
   width: 635px;
   margin: 0 auto;
+  padding: 0.2em 0 0.5em;
   line-height: 1em;
 }
 
-/* line 198, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-content, #content {
   width: 635px;
   margin: 0 auto;
   position: relative;
 }
-/* line 202, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-content .created, #content .created {
   position: absolute;
   /* TODO: layout */
@@ -153,42 +235,89 @@
   /* TODO: vertical rhythm */
   text-transform: uppercase;
 }
-/* line 214, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-content .created span, #content .created span {
   font-weight: bold;
   font-size: 19px;
 }
 
-/* line 227, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
+.tabs-sprite, .-xmasdev-tabs li, #content div.tabs li, .-xmasdev-tabs li.active, #content div.tabs li.active, .-xmasdev-tabs a, #content div.tabs a, .-xmasdev-tabs a.active, #content div.tabs a.active {
+  background: url('../images/tabs-saf346f12a8.png') no-repeat;
+}
+
+.-xmasdev-tabs ul, #content div.tabs ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+.-xmasdev-tabs ul li, #content div.tabs ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 0;
+  padding-right: 0;
+}
+.-xmasdev-tabs ul li:first-child, #content div.tabs ul li:first-child, .-xmasdev-tabs ul li.first, #content div.tabs ul li.first {
+  padding-left: 0;
+}
+.-xmasdev-tabs ul li:last-child, #content div.tabs ul li:last-child {
+  padding-right: 0;
+}
+.-xmasdev-tabs ul li.last, #content div.tabs ul li.last {
+  padding-right: 0;
+}
+.-xmasdev-tabs li, #content div.tabs li {
+  background-position: 0 -35px;
+  margin: 0 0.5em;
+}
+.-xmasdev-tabs li.active, #content div.tabs li.active {
+  background-position: 0 0;
+}
+.-xmasdev-tabs a, #content div.tabs a {
+  text-shadow: #aaaaaa 0px 0px 1px;
+  background-position: 100% -105px;
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+}
+.-xmasdev-tabs a.active, #content div.tabs a.active {
+  background-position: 100% -70px;
+}
+
 .-xmasdev-messages, #content .messages {
   list-style: none;
+  /* TODO: just a placeholder */
 }
-/* line 11, /home/barraponto/.rvm/gems/ruby-1.9.2-p290@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
 .-xmasdev-messages li, #content .messages li {
   list-style-image: none;
   list-style-type: none;
-  margin-left: 0px;
+  margin-left: 0;
+}
+.-xmasdev-messages.status, #content .status.messages {
+  background: none repeat scroll 0 0 #DDFFFF;
+  border: 1px solid #20F0C0;
 }
 
-/* line 239, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-pager, #content .pager {
   *zoom: 1;
   text-align: left;
   padding: 0;
 }
-/* line 38, /home/barraponto/.rvm/gems/ruby-1.9.2-p290@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .-xmasdev-pager:after, #content .pager:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 243, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-pager li, #content .pager li {
   display: inline-block;
   padding: 0;
   margin: 0;
 }
-/* line 247, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-pager a, #content .pager a {
   background: url('../images/bk_page.png?1323816876') no-repeat center center;
   text-decoration: none;
@@ -196,22 +325,18 @@
   display: block;
   color: white;
 }
-/* line 253, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-pager a:hover, #content .pager a:hover {
   background: url('../images/bk_page_on.png?1323816876') no-repeat center center;
 }
-/* line 255, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-pager .pager-info, #content .pager .pager-info {
   margin-right: 0.5em;
 }
-/* line 257, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-pager .pager-current, #content .pager .pager-current {
   color: white;
   padding: 0.5em 0.75em;
   background: url('../images/bk_page_on.png?1323816876') no-repeat center center;
 }
 
-/* line 269, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-title, .-xmasdev-node-title, .node > h2, #page-title {
   background: url('../images/bk_line.jpg?1323816876') no-repeat scroll left bottom transparent;
   font-size: 1.786em;
@@ -223,19 +348,16 @@
   margin-top: 0;
   line-height: 1.3em;
 }
-/* line 277, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-title.display-submitted, .display-submitted.-xmasdev-node-title, .node > h2.display-submitted, .display-submitted#page-title {
   background: none;
   padding-left: 50px;
   margin-bottom: 0;
   padding-bottom: 0;
 }
-/* line 282, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-title a, .-xmasdev-node-title a, .node > h2 a, #page-title a {
   text-decoration: none;
 }
 
-/* line 293, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-footer, #footer-wrapper {
   padding: 65px 0 40px;
   /* TODO: vertical rhythm */
@@ -245,7 +367,7 @@
   /* TODO: layout */
 }
 
-/* line 307, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
+/* Xmas block.tpl.php styles */
 .-xmasdev-block-title, .block > h2 {
   background: url('../images/bk_h2_right.png?1323816876') 0 0 no-repeat;
   height: 34px;
@@ -259,70 +381,20 @@
   margin: 0 -7px 0 2px;
 }
 
-/* line 331, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-sidebar-block, #sidebar-left .block, #sidebar-right .block {
   margin-bottom: 1em;
 }
 
-/* line 334, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-sidebar-block-title, #sidebar-left .block > h2, #sidebar-right .block > h2 {
   font-size: 12px;
 }
 
-/* line 337, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-sidebar-block-content, #sidebar-left .block .content, #sidebar-right .block .content {
   font-size: 12px;
   margin-left: 1em;
 }
-/* line 340, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
-.-xmasdev-sidebar-block-content ul, #sidebar-left .block .content ul, #sidebar-right .block .content ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 20px 0;
-}
-/* line 11, /home/barraponto/.rvm/gems/ruby-1.9.2-p290@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
-.-xmasdev-sidebar-block-content ul li, #sidebar-left .block .content ul li, #sidebar-right .block .content ul li {
-  list-style-image: none;
-  list-style-type: none;
-  margin-left: 0px;
-}
-/* line 344, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
-.-xmasdev-sidebar-block-content li, #sidebar-left .block .content li, #sidebar-right .block .content li {
-  padding: 0 5px 5px;
-  margin: 5px 0;
-  border-bottom: 1px dotted #ccc;
-}
-/* line 349, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
-.-xmasdev-sidebar-block-content li:last-of-type, #sidebar-left .block .content li:last-of-type, #sidebar-right .block .content li:last-of-type, .-xmasdev-sidebar-block-content li.expanded, #sidebar-left .block .content li.expanded, #sidebar-right .block .content li.expanded {
-  padding-bottom: 0;
-  border-bottom: none;
-}
-/* line 352, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
-.-xmasdev-sidebar-block-content li:last-of-type + li, #sidebar-left .block .content li:last-of-type + li, #sidebar-right .block .content li:last-of-type + li, .-xmasdev-sidebar-block-content li.expanded + li, #sidebar-left .block .content li.expanded + li, #sidebar-right .block .content li.expanded + li {
-  padding-top: 5px;
-  border-top: 1px dotted #ccc;
-}
-/* line 355, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
-.-xmasdev-sidebar-block-content li a, #sidebar-left .block .content li a, #sidebar-right .block .content li a {
-  color: #666666;
-}
-/* line 357, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
-.-xmasdev-sidebar-block-content li a:hover, #sidebar-left .block .content li a:hover, #sidebar-right .block .content li a:hover {
-  color: #0079bb;
-}
-/* line 358, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
-.-xmasdev-sidebar-block-content li ul, #sidebar-left .block .content li ul, #sidebar-right .block .content li ul {
-  margin-top: 5px;
-  border-top: 1px dotted #CCCCCC;
-  padding-left: 1em;
-  margin-bottom: 0;
-}
-/* line 363, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
-.-xmasdev-sidebar-block-content li li, #sidebar-left .block .content li li, #sidebar-right .block .content li li {
-  padding-left: 0;
-}
 
-/* line 367, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
+/* Xmas node.tpl.php styles */
 .-xmasdev-node, .node {
   background: url('../images/bk_line_ornament.jpg?1323816876') bottom left no-repeat;
   padding-bottom: 25px;
@@ -330,7 +402,6 @@
   position: relative;
 }
 
-/* line 378, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-node-title.display-submitted, .node > h2.display-submitted {
   background: none;
   margin-bottom: 0;
@@ -338,7 +409,6 @@
   padding-left: 50px;
 }
 
-/* line 385, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-node-meta, .node .meta {
   padding-left: 50px;
   padding-bottom: 2em;
@@ -348,7 +418,6 @@
   background: url('../images/bk_line.jpg?1323816876') no-repeat scroll left bottom transparent;
 }
 
-/* line 394, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-node-submitted, .node .submitted {
   display: inline-block;
   text-indent: 36px;
@@ -356,18 +425,13 @@
   background: url('../images/bk_bell.png?1323816876') no-repeat left center;
 }
 
-/* line 407, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-node-links li, .node .links li {
   padding: 0;
   margin: 0 1em 0 0;
 }
-/* line 412, /home/barraponto/Code/six/sites/all/themes/xmasdev/sass/_xmasdev-skin.scss */
 .-xmasdev-node-links li a, .node .links li a {
   color: #c32400;
   font-weight: bold;
 }
 
-/* page.tpl.php */
-/* block.tpl.php */
-/* node.tpl.php */
-/* user-profile.tpl.php */
+/* Xmas profile.tpl.php styles */
