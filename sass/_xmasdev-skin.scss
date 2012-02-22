@@ -26,7 +26,7 @@ $xmasdev-light-grey: #666666;
 $xmasdev-red: #C32400;
 $xmasdev-white: #FFFFFF;
 
-// Xmas Patterns
+/* Xmas patterns */
 .-xmas-vertical-menu {
     @include no-bullets;
     padding: 0;
@@ -55,7 +55,7 @@ $xmasdev-white: #FFFFFF;
   margin-bottom: 0;
     li { padding-left: 0; } }
 
-//HTML Elements
+/* Xmas HTML elements styles */
 .-xmasdev-h2 {
   font-size: 1.5em; //21px if base font-size is 14px
   margin: 0.67em 0;
@@ -76,17 +76,18 @@ $xmasdev-white: #FFFFFF;
 
 .-xmasdev-h5 {
   font-size: 1em; //14px if base font-size is 14px
+  font-style: italic;
   margin: 1em 0;
   font-weight: normal; }
 
 .-xmasdev-h6 {
   font-size: 0.8em; //11.2px if base font-size is 14px
+  font-style: italic;
   margin: 1.25em 0;
   font-weight: normal; }
 
 .-xmasdev-p {
-  margin: 0.7em 0; /* TODO: vertical rhythm */
-}
+  margin: 0.7em 0; /* TODO: vertical rhythm */ }
 
 .-xmasdev-li { }
 
@@ -138,7 +139,7 @@ $xmasdev-white: #FFFFFF;
   td:first-child {
     padding-left: 2.5em; } }
 
-// Content Classes
+/* Xmas filtered content styles */
 .-xmasdev-full-html-content {
   h2 { @extend .-xmasdev-h2; }
   h3 { @extend .-xmasdev-h3; }
@@ -172,7 +173,7 @@ $xmasdev-white: #FFFFFF;
   li { @extend .-xmasdev-li; }
   a { @extend .-xmasdev-a; } }
 
-// Page Components
+/* Xmas page.tpl.php styles */
 .-xmasdev-body {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 14px;
@@ -372,7 +373,7 @@ $xmasdev-white: #FFFFFF;
   a { @extend .-xmasdev-a; }
 }
 
-// Block Components
+/* Xmas block.tpl.php styles */
 // These are defaults for every block in your theme
 .-xmasdev-block { }
 
@@ -412,7 +413,7 @@ $xmasdev-white: #FFFFFF;
     @extend .-xmas-vertical-menu;
     ul { @extend .-xmas-vertical-submenu; } } }
 
-// Node Components
+/* Xmas node.tpl.php styles */
 // Make copies of these components for a diversity of node styles
 .-xmasdev-node {
   background: image-url('bk_line_ornament.jpg') bottom left no-repeat;
@@ -472,7 +473,7 @@ $xmasdev-white: #FFFFFF;
 
 .-xmasdev-node-preview { }
 
-// Profile Components
+/* Xmas profile.tpl.php styles */
 .-xmasdev-profile { }
 
 .-xmasdev-profile-picture { }

@@ -1,7 +1,7 @@
 @import "xmasdev-skin";
 @import "_xmasdev-base";
 
-/* page.tpl.php */
+// page.tpl.php
 body { @extend .-xmasdev-body; }
 
 #page { @extend .-xmasdev-page; }
@@ -61,7 +61,7 @@ ul.secondary-links  { @extend .-xmasdev-menu; }
 .footer-message { @extend .-xmasdev-footer-message; }
 
 
-/* block.tpl.php */
+// block.tpl.php
 .block {
   // try scoping the selectors by region
   @extend .-xmasdev-block;
@@ -91,7 +91,7 @@ ul.secondary-links  { @extend .-xmasdev-menu; }
     .footer { @extend .-xmasdev-footer-block-footer; } }
 }
 
-/* node.tpl.php */
+// node.tpl.php
 .node {
   @extend .-xmasdev-node;
   .picture { @extend .-xmasdev-node-picture; }
@@ -105,7 +105,7 @@ ul.secondary-links  { @extend .-xmasdev-menu; }
   &.node-unpublished { @extend .-xmasdev-node-unpublished; }
   .preview & { @extend .-xmasdev-node-preview; } }
 
-/* user-profile.tpl.php */
+// user-profile.tpl.php
 .profile {
   @extend .-xmasdev-profile;
   .picture { @extend .-xmasdev-profile-picture; }
