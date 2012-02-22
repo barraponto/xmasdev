@@ -289,6 +289,8 @@ $xmasdev-white: #FFFFFF;
 $tabs-position: 100%;
 @import "tabs/*.png";
 .-xmasdev-tabs {
+  .meta + & {
+    padding-left: 50px; }
   .primary { }
   .secondary { }
   // the following styles apply to both tab groups.
@@ -296,9 +298,11 @@ $tabs-position: 100%;
     @include horizontal-list(0); }
   li {
     @include tabs-sprite(inactive-left);
-    margin: 0 0.5em; }
+    margin: 0 0.5em 0.75em; }
   li.active {
-    @include tabs-sprite(active-left); }
+    @include tabs-sprite(active-left); 
+    a { 
+      @include tabs-sprite(active-right, $offset-x: 100%); } }
   a {
     @include text-shadow;
     @include tabs-sprite(inactive-right, $offset-x: 100%);
@@ -306,11 +310,13 @@ $tabs-position: 100%;
     color: white;
     text-decoration: none;
     padding: 0.5em 1em; }
-  a.active { 
-    @include tabs-sprite(active-right, $offset-x: 100%); } }
+  a.active { } }
 
 .-xmasdev-messages {
   @include no-bullets;
+  padding: 0.5em;
+  margin: 0 auto 0.5em;
+  width: 635px;
   &.status {
     background: none repeat scroll 0 0 #DDFFFF;
     border: 1px solid #20F0C0; } /* TODO: just a placeholder */

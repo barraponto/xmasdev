@@ -35,12 +35,12 @@ ul.secondary-links  { @extend .-xmasdev-menu; }
 
 #breadcrumb { @extend .-xmasdev-breadcrumb; }
 
+.messages { @extend .-xmasdev-messages; }
+
 #content {
   @extend .-xmasdev-content;
 
   div.tabs { @extend .-xmasdev-tabs; }
-
-  .messages { @extend .-xmasdev-messages; }
 
   .pager { @extend .-xmasdev-pager; }
 
@@ -114,3 +114,4 @@ ul.secondary-links  { @extend .-xmasdev-menu; }
   dt { @extend .-xmasdev-profile-field-label; }
   dd { @extend .-xmasdev-profile-field-value; } }
 
+@import "xmasdev-forms";

@@ -4,9 +4,6 @@ function xmasdev_preprocess_page(&$vars, $hook) {
   $vars['search_box'] = NULL;
   $vars['primary_links'] = NULL;
   $vars['secondary_links'] = NULL;
-  //$vars['breadcrumb'] = NULL;
-  //$vars['messages'] = NULL; /* WARNING: turning off messages is a sign of bad judgement */
-  //$vars['tabs'] = NULL; /* WARNING: local tasks won't have any links to it */
 
   //Checking whether 'submitted by' data is displayed
   if ($vars['node']) {
@@ -15,6 +12,7 @@ function xmasdev_preprocess_page(&$vars, $hook) {
     //add a display-submitted class
     if ($theme_settings['toggle_node_info_' . $vars['node']->type]) {
       $vars['title_classes'] = 'display-submitted';
+      $vars['tabs'] = FALSE;
       //show the created date
       $vars['created'] = format_date($vars['node']->created, 'custom', 'M \<\s\p\a\n\>j\<\/\s\p\a\n\>');
     }
@@ -29,7 +27,10 @@ function xmasdev_preprocess_node(&$vars, $hook) {
   $theme_settings = theme_get_settings();
   $vars['display_submitted'] = $theme_settings['toggle_node_info_' . $node->type];
 
+  $vars['tabs'] = FALSE;
+
   if ($vars['display_submitted']) {
+    $vars['tabs'] = theme('menu_local_tasks');
     $vars['date'] = format_date($vars['created'], 'custom', 'M \<\s\p\a\n\>j\<\/\s\p\a\n\>');
     $vars['submitted_text'] = t('Posted by !user', array('!user' => $vars['name']));
     if (!empty($vars['taxonomy'])) {

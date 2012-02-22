@@ -1,0 +1,10 @@
+@import "compass";
+
+#autocomplete {
+  ul { 
+    @include no-bullets;
+    padding: 0; 
+    margin: 0; }
+  li {
+    padding-left: 1em; }
+}

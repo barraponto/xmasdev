@@ -74,6 +74,8 @@
   </div>
   <?php endif; ?>
 
+  <?php if (!empty($tabs)): ?><div class="tabs"><?php print $tabs; ?></div><?php endif; ?>
+
   <div class="content">
     <?php print $content ?>
   </div>
