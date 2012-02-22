@@ -46,25 +46,43 @@ $xmasdev-white: #FFFFFF;
           border-top: 1px dotted #ccc; } }
       a {
         color: $xmasdev-light-grey;
-        &:hover { color: $xmasdev-blue; } } }
+        &:hover { color: $xmasdev-blue; } } } }
 
 .-xmas-vertical-submenu {
   margin-top: 5px;
   border-top: 1px dotted #CCCCCC;
   padding-left: 1em;
-  margin-bottom: 0; }
+  margin-bottom: 0;
     li { padding-left: 0; } }
 
 //HTML Elements
 .-xmasdev-h2 {
-  // margin: 0.83em 0;
-  font-size: 1.286em; //18px if base font-size is 14px
+  font-size: 1.5em; //21px if base font-size is 14px
+  margin: 0.67em 0;
   font-weight: normal;
   color: $xmasdev-blue; }
 
-.-xmasdev-h3 { }
+.-xmasdev-h3 {
+  font-size: 1.286em; //18px if base font-size is 14px
+  margin: 0.83em 0;
+  font-weight: normal;
+  color: $xmasdev-blue; }
 
-.-xmasdev-h4 { }
+.-xmasdev-h4 {
+  font-size: 1em; //14px if base font-size is 14px
+  margin: 1em 0;
+  font-weight: normal;
+  color: $xmasdev-blue; }
+
+.-xmasdev-h5 {
+  font-size: 1em; //14px if base font-size is 14px
+  margin: 1em 0;
+  font-weight: normal; }
+
+.-xmasdev-h6 {
+  font-size: 0.8em; //11.2px if base font-size is 14px
+  margin: 1.25em 0;
+  font-weight: normal; }
 
 .-xmasdev-p {
   margin: 0.7em 0; /* TODO: vertical rhythm */
@@ -95,21 +113,38 @@ $xmasdev-white: #FFFFFF;
 .-xmasdev-code { }
 
 .-xmasdev-table {
+  width: 100%;
   caption { }
-  tr {
-    &.odd { }
-    &.even { }
-    th { }
-    td { }
-    thead & { }
-    tfoot & { }
-    tbody & { } } }
+  thead {
+    background: image-url('tableheader.png') no-repeat top left; } }
+
+.-xmasdev-table-row {
+  line-height: 1.8em;
+  &.odd { }
+  &.even { }
+  thead & {
+    line-height: 2.4em; }
+  tfoot & { }
+  tbody & {
+    border-bottom: 1px dotted #ccc;
+    border-left: 2em solid transparent;
+    border-right: 2em solid transparent; }
+  th {
+    color: white;
+    text-align: left; }
+  td { }
+  th:first-child {
+    padding-left: 3.5em; }
+  td:first-child {
+    padding-left: 2.5em; } }
 
 // Content Classes
 .-xmasdev-full-html-content {
   h2 { @extend .-xmasdev-h2; }
   h3 { @extend .-xmasdev-h3; }
   h4 { @extend .-xmasdev-h4; }
+  h5 { @extend .-xmasdev-h5; }
+  h6 { @extend .-xmasdev-h6; }
   p { @extend .-xmasdev-p; }
   li { @extend .-xmasdev-li; }
   ul { @extend .-xmasdev-ul; }
@@ -123,11 +158,14 @@ $xmasdev-white: #FFFFFF;
   blockquote { @extend .-xmasdev-blockquote; }
   cite { @extend .-xmasdev-cite; }
   a { @extend .-xmasdev-a; }
-  table { @extend .-xmasdev-table; } }
+  table { @extend .-xmasdev-table; }
+  tr { @extend .-xmasdev-table-row; } }
 
 .-xmasdev-restricted-html-content {
   h3 { @extend .-xmasdev-h3; }
   h4 { @extend .-xmasdev-h4; }
+  h5 { @extend .-xmasdev-h5; }
+  h6 { @extend .-xmasdev-h6; }
   p { @extend .-xmasdev-p; }
   ul { @extend .-xmasdev-ul; }
   ol { @extend .-xmasdev-ol; }
