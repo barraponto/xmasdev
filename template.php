@@ -1,6 +1,6 @@
 <?php
 
-function xmasdev_preprocess_page(&$vars, $hook) {
+function xmas_preprocess_page(&$vars, $hook) {
   $vars['search_box'] = NULL;
   $vars['primary_links'] = NULL;
   $vars['secondary_links'] = NULL;
@@ -19,7 +19,7 @@ function xmasdev_preprocess_page(&$vars, $hook) {
   }
 }
 
-function xmasdev_preprocess_node(&$vars, $hook) {
+function xmas_preprocess_node(&$vars, $hook) {
   $vars['user_picture'] = NULL;
 
   $node = $vars['node'];
@@ -56,11 +56,11 @@ function xmasdev_preprocess_node(&$vars, $hook) {
   }
 }
 
-function xmasdev_preprocess_comment(&$vars, $hook) {
+function xmas_preprocess_comment(&$vars, $hook) {
   $vars['picture'] = NULL;
 }
 
-function xmasdev_pager($tags = array(), $limit = 10, $element = 0, $parameters = array(), $quantity = 3) {
+function xmas_pager($tags = array(), $limit = 10, $element = 0, $parameters = array(), $quantity = 3) {
   global $pager_page_array, $pager_total;
 
   // Calculate various markers within this pager piece:

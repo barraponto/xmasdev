@@ -1,30 +1,30 @@
 @import "compass";
 // This variable controls the total width of the container div
 // You can use px for a Fixed layout or % for a Liquid layout
-$xmasdev-width: 960px;
+$xmas-width: 960px;
 
 // These variables control the size of the sidebars
-$xmasdev-first-sidebar-width: 270px;
-$xmasdev-second-sidebar-width: 200px;
+$xmas-first-sidebar-width: 270px;
+$xmas-second-sidebar-width: 200px;
 
 // This variable positions the content relative to the sidebars
 // Possible values are first, last, middle
-$xmasdev-content-position: "first";
+$xmas-content-position: "first";
 
 // These variables control the typefaces as defined in html-reset.css
-$xmasdev-proportional-typeface: Georgia, "Times New Roman", Times, serif;
-$xmasdev-monospaced-typeface: "Courier New", "DejaVu Sans Mono", monospace;
+$xmas-proportional-typeface: Georgia, "Times New Roman", Times, serif;
+$xmas-monospaced-typeface: "Courier New", "DejaVu Sans Mono", monospace;
 
 // These variables control the font sizes as defined in html-reset.css
-$xmasdev-base-font-size: 14px;
+$xmas-base-font-size: 14px;
 
 // Colors
-$xmasdev-blue: #0079BB;
-$xmasdev-dark-blue: #1F1F30;
-$xmasdev-dark-grey: #333333;
-$xmasdev-light-grey: #666666;
-$xmasdev-red: #C32400;
-$xmasdev-white: #FFFFFF;
+$xmas-blue: #0079BB;
+$xmas-dark-blue: #1F1F30;
+$xmas-dark-grey: #333333;
+$xmas-light-grey: #666666;
+$xmas-red: #C32400;
+$xmas-white: #FFFFFF;
 
 /* Xmas patterns */
 .-xmas-vertical-menu {
@@ -45,8 +45,8 @@ $xmasdev-white: #FFFFFF;
           padding-top: 5px;
           border-top: 1px dotted #ccc; } }
       a {
-        color: $xmasdev-light-grey;
-        &:hover { color: $xmasdev-blue; } } } }
+        color: $xmas-light-grey;
+        &:hover { color: $xmas-blue; } } } }
 
 .-xmas-vertical-submenu {
   margin-top: 5px;
@@ -56,51 +56,51 @@ $xmasdev-white: #FFFFFF;
     li { padding-left: 0; } }
 
 /* Xmas HTML elements styles */
-.-xmasdev-h2 {
+.-xmas-h2 {
   font-size: 1.5em; //21px if base font-size is 14px
   margin: 0.67em 0;
   font-weight: normal;
-  color: $xmasdev-blue; }
+  color: $xmas-blue; }
 
-.-xmasdev-h3 {
+.-xmas-h3 {
   font-size: 1.286em; //18px if base font-size is 14px
   margin: 0.83em 0;
   font-weight: normal;
-  color: $xmasdev-blue; }
+  color: $xmas-blue; }
 
-.-xmasdev-h4 {
+.-xmas-h4 {
   font-size: 1em; //14px if base font-size is 14px
   margin: 1em 0;
   font-weight: normal;
-  color: $xmasdev-blue; }
+  color: $xmas-blue; }
 
-.-xmasdev-h5 {
+.-xmas-h5 {
   font-size: 1em; //14px if base font-size is 14px
   font-style: italic;
   margin: 1em 0;
   font-weight: normal; }
 
-.-xmasdev-h6 {
+.-xmas-h6 {
   font-size: 0.8em; //11.2px if base font-size is 14px
   font-style: italic;
   margin: 1.25em 0;
   font-weight: normal; }
 
-.-xmasdev-p {
+.-xmas-p {
   margin: 0.7em 0; /* TODO: vertical rhythm */ }
 
-.-xmasdev-li { }
+.-xmas-li { }
 
-.-xmasdev-ul { }
+.-xmas-ul { }
 
-.-xmasdev-ol { }
+.-xmas-ol { }
 
-.-xmasdev-blockquote { }
+.-xmas-blockquote { }
 
-.-xmasdev-cite { }
+.-xmas-cite { }
 
-.-xmasdev-a {
-  color: $xmasdev-blue;
+.-xmas-a {
+  color: $xmas-blue;
   text-decoration: none;
   &:link { }
   &:visited { }
@@ -109,17 +109,17 @@ $xmasdev-white: #FFFFFF;
   &:focus { }
   &:active { } }
 
-.-xmasdev-pre { }
+.-xmas-pre { }
 
-.-xmasdev-code { }
+.-xmas-code { }
 
-.-xmasdev-table {
+.-xmas-table {
   width: 100%;
   caption { }
   thead {
     background: image-url('tableheader.png') no-repeat top left; } }
 
-.-xmasdev-table-row {
+.-xmas-table-row {
   line-height: 1.8em;
   &.odd { }
   &.even { }
@@ -140,66 +140,66 @@ $xmasdev-white: #FFFFFF;
     padding-left: 2.5em; } }
 
 /* Xmas filtered content styles */
-.-xmasdev-full-html-content {
-  h2 { @extend .-xmasdev-h2; }
-  h3 { @extend .-xmasdev-h3; }
-  h4 { @extend .-xmasdev-h4; }
-  h5 { @extend .-xmasdev-h5; }
-  h6 { @extend .-xmasdev-h6; }
-  p { @extend .-xmasdev-p; }
-  li { @extend .-xmasdev-li; }
-  ul { @extend .-xmasdev-ul; }
-  ol { @extend .-xmasdev-ol; }
+.-xmas-full-html-content {
+  h2 { @extend .-xmas-h2; }
+  h3 { @extend .-xmas-h3; }
+  h4 { @extend .-xmas-h4; }
+  h5 { @extend .-xmas-h5; }
+  h6 { @extend .-xmas-h6; }
+  p { @extend .-xmas-p; }
+  li { @extend .-xmas-li; }
+  ul { @extend .-xmas-ul; }
+  ol { @extend .-xmas-ol; }
   pre { 
   font-family: "Courier New", "DejaVu Sans Mono", monospace;
-  @extend .-xmasdev-pre; }
+  @extend .-xmas-pre; }
   code { 
   font-family: "Courier New", "DejaVu Sans Mono", monospace;
-  @extend .-xmasdev-code; }
-  blockquote { @extend .-xmasdev-blockquote; }
-  cite { @extend .-xmasdev-cite; }
-  a { @extend .-xmasdev-a; }
-  table { @extend .-xmasdev-table; }
-  tr { @extend .-xmasdev-table-row; } }
+  @extend .-xmas-code; }
+  blockquote { @extend .-xmas-blockquote; }
+  cite { @extend .-xmas-cite; }
+  a { @extend .-xmas-a; }
+  table { @extend .-xmas-table; }
+  tr { @extend .-xmas-table-row; } }
 
-.-xmasdev-restricted-html-content {
-  h3 { @extend .-xmasdev-h3; }
-  h4 { @extend .-xmasdev-h4; }
-  h5 { @extend .-xmasdev-h5; }
-  h6 { @extend .-xmasdev-h6; }
-  p { @extend .-xmasdev-p; }
-  ul { @extend .-xmasdev-ul; }
-  ol { @extend .-xmasdev-ol; }
-  li { @extend .-xmasdev-li; }
-  a { @extend .-xmasdev-a; } }
+.-xmas-restricted-html-content {
+  h3 { @extend .-xmas-h3; }
+  h4 { @extend .-xmas-h4; }
+  h5 { @extend .-xmas-h5; }
+  h6 { @extend .-xmas-h6; }
+  p { @extend .-xmas-p; }
+  ul { @extend .-xmas-ul; }
+  ol { @extend .-xmas-ol; }
+  li { @extend .-xmas-li; }
+  a { @extend .-xmas-a; } }
 
 /* Xmas page.tpl.php styles */
-.-xmasdev-body {
+.-xmas-body {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 14px;
   width: 960px;
   margin: 0 auto;
-  background: image-url('bk_body.jpg') no-repeat scroll top center $xmasdev-dark-blue;
-  color: $xmasdev-dark-grey;
+  background: image-url('bk_body.jpg') no-repeat scroll top center $xmas-dark-blue;
+  color: $xmas-dark-grey;
   line-height: 135%; /* TODO: vertical rhythm */ }
 
-.-xmasdev-skip-link { }
+.-xmas-skip-link { }
 
-.-xmasdev-page { }
+.-xmas-page { }
 
-.-xmasdev-header {
+.-xmas-header {
   height: 206px; /* TODO: vertical rhythm */ }
 
-.-xmasdev-logo {
+.-xmas-logo {
   float: left;
   margin-right: 1em; }
 
-.-xmasdev-branding { 
+.-xmas-branding { 
   padding-left: 70px;
   padding-top: 50px;
 } // usually a #name-and-slogan wrapper div (YMMV)
 
-.-xmasdev-site-name {
+.-xmas-site-name {
   letter-spacing: -1px;
   font-size: 2.429em; //34px if base font-size is 14px
   background-image: none;
@@ -209,62 +209,62 @@ $xmasdev-white: #FFFFFF;
     font-weight: normal;
     line-height: 25px; /* TODO: vertical rhythm */
     text-decoration: none;
-    @include link-colors($xmasdev-white); } }
+    @include link-colors($xmas-white); } }
 
-.-xmasdev-site-slogan {
+.-xmas-site-slogan {
   padding: 10px 0; /* TODO: vertical rhythm */
   text-transform: uppercase;
   font-size: 0.786em;
   color: #CECFDB; /* TODO: color palette */
 }
 
-.-xmasdev-header-region { }
+.-xmas-header-region { }
 
-.-xmasdev-container {
-  background: $xmasdev-white image-url('bk_content.jpg') 0 0 repeat-y; 
+.-xmas-container {
+  background: $xmas-white image-url('bk_content.jpg') 0 0 repeat-y; 
 }
 
-.-xmasdev-navigation { }
+.-xmas-navigation { }
 
-.-xmasdev-menu { // by default, both menus inherit these styles
+.-xmas-menu { // by default, both menus inherit these styles
   // @extend .-xmas-vertical-menu;
   > li { // use '>' to target only child items
     &.first { }
     &.last { }
     &.expanded { } } }
 
-.-xmasdev-submenu { // think expanded menus, not secondary menus
+.-xmas-submenu { // think expanded menus, not secondary menus
     // @extend .-xmas-vertical-submenu;
     > li { // use '>' to target only child items
     &.first { }
     &.last { }
     &.expanded { } } }
 
-.-xmasdev-sidebar {
+.-xmas-sidebar {
   padding-top: 1.5em;
   width: 270px;
   float: left;
 } // by default both sidebars inherit these styles
 
-.-xmasdev-main {
+.-xmas-main {
   padding-top: 1.5em;
   width: 690px;
   float: left;
   &.with-breadcrumb { 
     padding-top: 0; } }
 
-.-xmasdev-mission {
+.-xmas-mission {
   margin: 0 auto 1em; 
   width: 635px; }
 
-.-xmasdev-breadcrumb {
+.-xmas-breadcrumb {
   width: 635px;
   margin: 0 auto;
   padding: 0.2em 0 0.5em;
   line-height: 1em;
-  a { @extend .-xmasdev-a; } }
+  a { @extend .-xmas-a; } }
 
-.-xmasdev-content {
+.-xmas-content {
   width: 635px;
   margin: 0 auto;
   position: relative;
@@ -275,7 +275,7 @@ $xmasdev-white: #FFFFFF;
     height: 35px;
     width: 70px;
     background: image-url('bk_date.png') 0 0 no-repeat;
-    color: $xmasdev-white;
+    color: $xmas-white;
     line-height: 25px; /* TODO: vertical rhythm */
     text-align: center;
     font-size: 0.786em; /* TODO: vertical rhythm */
@@ -286,7 +286,7 @@ $xmasdev-white: #FFFFFF;
 
 $tabs-position: 100%;
 @import "tabs/*.png";
-.-xmasdev-tabs {
+.-xmas-tabs {
   .primary { }
   .secondary { }
   // the following styles apply to both tab groups.
@@ -308,7 +308,7 @@ $tabs-position: 100%;
     padding: 0.5em 1em; }
   a.active { } }
 
-.-xmasdev-messages {
+.-xmas-messages {
   @include no-bullets;
   padding: 0.5em;
   margin: 0 auto 0.5em;
@@ -325,7 +325,7 @@ $tabs-position: 100%;
   li { }
 }
 
-.-xmasdev-pager {
+.-xmas-pager {
   @include pie-clearfix;
   text-align: left;
   padding: 0;
@@ -352,10 +352,10 @@ $tabs-position: 100%;
   .pager-first { }
   .pager-last { } }
 
-.-xmasdev-feed-icons {
+.-xmas-feed-icons {
   .feed-icon { } }
 
-.-xmasdev-title {
+.-xmas-title {
   background: image-url('bk_line.jpg') no-repeat scroll left bottom transparent;
   font-size: 1.786em; /* 25px if base font-size is 14px */
   font-weight: normal;
@@ -369,31 +369,31 @@ $tabs-position: 100%;
     margin-bottom: 0;
     padding-bottom: 0; }
   a { 
-    @extend .-xmasdev-a;
+    @extend .-xmas-a;
     text-decoration: none; }
 }
 
-.-xmasdev-content-area {
+.-xmas-content-area {
   .page-admin & {
-    @extend .-xmasdev-full-html-content;
+    @extend .-xmas-full-html-content;
   }
 }
 
-.-xmasdev-footer {
+.-xmas-footer {
   padding: 65px 0 40px; /* TODO: vertical rhythm */
-  color: $xmasdev-light-grey;
+  color: $xmas-light-grey;
   background: image-url('bk_footer.jpg') 0 0 no-repeat;
   position: relative; /* TODO: layout */ }
 
-.-xmasdev-footer-message {
-  a { @extend .-xmasdev-a; }
+.-xmas-footer-message {
+  a { @extend .-xmas-a; }
 }
 
 /* Xmas block.tpl.php styles */
 // These are defaults for every block in your theme
-.-xmasdev-block { }
+.-xmas-block { }
 
-.-xmasdev-block-title {
+.-xmas-block-title {
   background: image-url('bk_h2_right.png') 0 0 no-repeat;
   height: 34px;
   line-height: 32px;
@@ -406,23 +406,23 @@ $tabs-position: 100%;
   margin: 0 -7px 0 2px;
 }
 
-.-xmasdev-block-content { 
-  @extend .-xmasdev-restricted-html-content; }
+.-xmas-block-content { 
+  @extend .-xmas-restricted-html-content; }
 
 // Make copies of the components for a diversity of block styles, like these
-.-xmasdev-content-block { }
+.-xmas-content-block { }
 
-.-xmasdev-content-block-title { }
+.-xmas-content-block-title { }
 
-.-xmasdev-content-block-content { }
+.-xmas-content-block-content { }
 
-.-xmasdev-sidebar-block {
+.-xmas-sidebar-block {
   margin-bottom: 1em; }
 
-.-xmasdev-sidebar-block-title {
+.-xmas-sidebar-block-title {
   font-size: 12px; }
 
-.-xmasdev-sidebar-block-content {
+.-xmas-sidebar-block-content {
   font-size: 12px;
   margin-left: 1em;
   ul {
@@ -431,24 +431,24 @@ $tabs-position: 100%;
 
 /* Xmas node.tpl.php styles */
 // Make copies of these components for a diversity of node styles
-.-xmasdev-node {
+.-xmas-node {
   background: image-url('bk_line_ornament.jpg') bottom left no-repeat;
   padding-bottom:25px;
   margin-bottom:20px;
   position: relative; }
 
-.-xmasdev-node-picture { }
+.-xmas-node-picture { }
 
-.-xmasdev-node-title {
-  @extend .-xmasdev-title;
+.-xmas-node-title {
+  @extend .-xmas-title;
   &.display-submitted { 
     background: none;
     margin-bottom: 0;
     padding-bottom: 0;
     padding-left: 50px; }
-} //meant for node listings, see also .-xmasdev-title
+} //meant for node listings, see also .-xmas-title
 
-.-xmasdev-node-meta {
+.-xmas-node-meta {
   padding-left: 50px;
   padding-bottom: 2em;
   margin-top: 0.8em;
@@ -457,48 +457,48 @@ $tabs-position: 100%;
   background: image-url('bk_line.jpg') no-repeat scroll left bottom transparent;
 }
 
-.-xmasdev-node-submitted {
+.-xmas-node-submitted {
   display: inline-block;
   text-indent: 36px;
   height: 22px;
   background: image-url('bk_bell.png') no-repeat left center;
-  a { @extend .-xmasdev-a; }
+  a { @extend .-xmas-a; }
 }
 
-.-xmasdev-node-terms { } 
+.-xmas-node-terms { } 
 
-.-xmasdev-node-content { @extend .-xmasdev-full-html-content; }
+.-xmas-node-content { @extend .-xmas-full-html-content; }
 
-.-xmasdev-node-links {
+.-xmas-node-links {
   li {
     padding: 0;
     margin: 0 1em 0 0;
     &.first { }
     &.last { }
     a { 
-      @extend .-xmasdev-a;
-      color: $xmasdev-red;
+      @extend .-xmas-a;
+      color: $xmas-red;
       font-weight: bold; } } }
 
-.-xmasdev-node-sticky { }
+.-xmas-node-sticky { }
 
-.-xmasdev-node-unpublished {
+.-xmas-node-unpublished {
     .unpublished { } }
 
-.-xmasdev-node-by-viewer { }
+.-xmas-node-by-viewer { }
 
-.-xmasdev-node-preview { }
+.-xmas-node-preview { }
 
 /* Xmas profile.tpl.php styles */
-.-xmasdev-profile { }
+.-xmas-profile { }
 
-.-xmasdev-profile-picture { }
+.-xmas-profile-picture { }
 
-.-xmasdev-profile-category-header { }
+.-xmas-profile-category-header { }
 
-.-xmasdev-profile-category-wrapper { }
+.-xmas-profile-category-wrapper { }
 
-.-xmasdev-profile-field-label { }
+.-xmas-profile-field-label { }
 
-.-xmasdev-profile-field-value { }
+.-xmas-profile-field-value { }
 

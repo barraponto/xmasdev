@@ -1,0 +1,446 @@
+/* Xmas patterns */
+.-xmas-vertical-menu, .-xmas-sidebar-block-content ul, #sidebar-left .block .content ul, #sidebar-right .block .content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+.-xmas-vertical-menu li, .-xmas-sidebar-block-content ul li, #sidebar-left .block .content ul li, #sidebar-right .block .content ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+.-xmas-vertical-menu li, .-xmas-sidebar-block-content ul li, #sidebar-left .block .content ul li, #sidebar-right .block .content ul li {
+  padding: 0 5px 5px;
+  margin: 5px 0;
+  border-bottom: 1px dotted #ccc;
+}
+.-xmas-vertical-menu li:last-of-type, .-xmas-sidebar-block-content ul li:last-of-type, #sidebar-left .block .content ul li:last-of-type, #sidebar-right .block .content ul li:last-of-type, .-xmas-vertical-menu li.last, .-xmas-sidebar-block-content ul li.last, #sidebar-left .block .content ul li.last, #sidebar-right .block .content ul li.last, .-xmas-vertical-menu li.expanded, .-xmas-sidebar-block-content ul li.expanded, #sidebar-left .block .content ul li.expanded, #sidebar-right .block .content ul li.expanded {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.-xmas-vertical-menu li:last-of-type + li, .-xmas-sidebar-block-content ul li:last-of-type + li, #sidebar-left .block .content ul li:last-of-type + li, #sidebar-right .block .content ul li:last-of-type + li, .-xmas-vertical-menu li.last + li, .-xmas-sidebar-block-content ul li.last + li, #sidebar-left .block .content ul li.last + li, #sidebar-right .block .content ul li.last + li, .-xmas-vertical-menu li.expanded + li, .-xmas-sidebar-block-content ul li.expanded + li, #sidebar-left .block .content ul li.expanded + li, #sidebar-right .block .content ul li.expanded + li {
+  padding-top: 5px;
+  border-top: 1px dotted #ccc;
+}
+.-xmas-vertical-menu li a, .-xmas-sidebar-block-content ul li a, #sidebar-left .block .content ul li a, #sidebar-right .block .content ul li a {
+  color: #666666;
+}
+.-xmas-vertical-menu li a:hover, .-xmas-sidebar-block-content ul li a:hover, #sidebar-left .block .content ul li a:hover, #sidebar-right .block .content ul li a:hover {
+  color: #0079bb;
+}
+
+.-xmas-vertical-submenu, .-xmas-sidebar-block-content ul ul, #sidebar-left .block .content ul ul, #sidebar-right .block .content ul ul {
+  margin-top: 5px;
+  border-top: 1px dotted #CCCCCC;
+  padding-left: 1em;
+  margin-bottom: 0;
+}
+.-xmas-vertical-submenu li, .-xmas-sidebar-block-content ul ul li, #sidebar-left .block .content ul ul li, #sidebar-right .block .content ul ul li {
+  padding-left: 0;
+}
+
+/* Xmas HTML elements styles */
+.-xmas-h2, .-xmas-full-html-content h2, .page-admin .-xmas-content-area h2, .page-admin #content-content h2, .-xmas-node-content h2, .node .content h2 {
+  font-size: 1.5em;
+  margin: 0.67em 0;
+  font-weight: normal;
+  color: #0079bb;
+}
+
+.-xmas-h3, .-xmas-full-html-content h3, .page-admin .-xmas-content-area h3, .page-admin #content-content h3, .-xmas-node-content h3, .node .content h3, .-xmas-restricted-html-content h3, .-xmas-block-content h3, .block .content h3 {
+  font-size: 1.286em;
+  margin: 0.83em 0;
+  font-weight: normal;
+  color: #0079bb;
+}
+
+.-xmas-h4, .-xmas-full-html-content h4, .page-admin .-xmas-content-area h4, .page-admin #content-content h4, .-xmas-node-content h4, .node .content h4, .-xmas-restricted-html-content h4, .-xmas-block-content h4, .block .content h4 {
+  font-size: 1em;
+  margin: 1em 0;
+  font-weight: normal;
+  color: #0079bb;
+}
+
+.-xmas-h5, .-xmas-full-html-content h5, .page-admin .-xmas-content-area h5, .page-admin #content-content h5, .-xmas-node-content h5, .node .content h5, .-xmas-restricted-html-content h5, .-xmas-block-content h5, .block .content h5 {
+  font-size: 1em;
+  font-style: italic;
+  margin: 1em 0;
+  font-weight: normal;
+}
+
+.-xmas-h6, .-xmas-full-html-content h6, .page-admin .-xmas-content-area h6, .page-admin #content-content h6, .-xmas-node-content h6, .node .content h6, .-xmas-restricted-html-content h6, .-xmas-block-content h6, .block .content h6 {
+  font-size: 0.8em;
+  font-style: italic;
+  margin: 1.25em 0;
+  font-weight: normal;
+}
+
+.-xmas-p, .-xmas-full-html-content p, .page-admin .-xmas-content-area p, .page-admin #content-content p, .-xmas-node-content p, .node .content p, .-xmas-restricted-html-content p, .-xmas-block-content p, .block .content p {
+  margin: 0.7em 0;
+  /* TODO: vertical rhythm */
+}
+
+.-xmas-a, .-xmas-full-html-content a, .page-admin .-xmas-content-area a, .page-admin #content-content a, .-xmas-node-content a, .node .content a, .-xmas-restricted-html-content a, .-xmas-block-content a, .block .content a, .-xmas-breadcrumb a, #breadcrumb a, .-xmas-title a, .-xmas-node-title a, .node > h2 a, #page-title a, .-xmas-footer-message a, .footer-message a, .-xmas-node-submitted a, .node .submitted a, .-xmas-node-links li a, .node .links li a {
+  color: #0079bb;
+  text-decoration: none;
+}
+.-xmas-a:hover, .-xmas-full-html-content a:hover, .page-admin .-xmas-content-area a:hover, .page-admin #content-content a:hover, .-xmas-node-content a:hover, .node .content a:hover, .-xmas-restricted-html-content a:hover, .-xmas-block-content a:hover, .block .content a:hover, .-xmas-breadcrumb a:hover, #breadcrumb a:hover, .-xmas-title a:hover, .-xmas-node-title a:hover, .node > h2 a:hover, #page-title a:hover, .-xmas-footer-message a:hover, .footer-message a:hover, .-xmas-node-submitted a:hover, .node .submitted a:hover, .-xmas-node-links li a:hover, .node .links li a:hover {
+  text-decoration: underline;
+}
+
+.-xmas-table, .-xmas-full-html-content table, .page-admin .-xmas-content-area table, .page-admin #content-content table, .-xmas-node-content table, .node .content table {
+  width: 100%;
+}
+.-xmas-table thead, .-xmas-full-html-content table thead, .page-admin .-xmas-content-area table thead, .page-admin #content-content table thead, .-xmas-node-content table thead, .node .content table thead {
+  background: url('../images/tableheader.png?1329934995') no-repeat top left;
+}
+
+.-xmas-table-row, .-xmas-full-html-content tr, .page-admin .-xmas-content-area tr, .page-admin #content-content tr, .-xmas-node-content tr, .node .content tr {
+  line-height: 1.8em;
+}
+thead .-xmas-table-row, thead .-xmas-full-html-content tr, .-xmas-full-html-content thead tr, thead .page-admin .-xmas-content-area tr, .page-admin .-xmas-content-area thead tr, thead .page-admin #content-content tr, .page-admin #content-content thead tr, thead .-xmas-node-content tr, .-xmas-node-content thead tr, thead .node .content tr, .node .content thead tr {
+  line-height: 2.4em;
+}
+tbody .-xmas-table-row, tbody .-xmas-full-html-content tr, .-xmas-full-html-content tbody tr, tbody .page-admin .-xmas-content-area tr, .page-admin .-xmas-content-area tbody tr, tbody .page-admin #content-content tr, .page-admin #content-content tbody tr, tbody .-xmas-node-content tr, .-xmas-node-content tbody tr, tbody .node .content tr, .node .content tbody tr {
+  border-bottom: 1px dotted #ccc;
+  border-left: 2em solid transparent;
+  border-right: 2em solid transparent;
+}
+.-xmas-table-row th, .-xmas-full-html-content tr th, .page-admin .-xmas-content-area tr th, .page-admin #content-content tr th, .-xmas-node-content tr th, .node .content tr th {
+  color: white;
+  text-align: left;
+}
+.-xmas-table-row th:first-child, .-xmas-full-html-content tr th:first-child, .page-admin .-xmas-content-area tr th:first-child, .page-admin #content-content tr th:first-child, .-xmas-node-content tr th:first-child, .node .content tr th:first-child {
+  padding-left: 3.5em;
+}
+.-xmas-table-row td:first-child, .-xmas-full-html-content tr td:first-child, .page-admin .-xmas-content-area tr td:first-child, .page-admin #content-content tr td:first-child, .-xmas-node-content tr td:first-child, .node .content tr td:first-child {
+  padding-left: 2.5em;
+}
+
+/* Xmas filtered content styles */
+.-xmas-full-html-content pre, .page-admin .-xmas-content-area pre, .page-admin #content-content pre, .-xmas-node-content pre, .node .content pre {
+  font-family: "Courier New", "DejaVu Sans Mono", monospace;
+}
+.-xmas-full-html-content code, .page-admin .-xmas-content-area code, .page-admin #content-content code, .-xmas-node-content code, .node .content code {
+  font-family: "Courier New", "DejaVu Sans Mono", monospace;
+}
+
+/* Xmas page.tpl.php styles */
+.-xmas-body, body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 14px;
+  width: 960px;
+  margin: 0 auto;
+  background: url('../images/bk_body.jpg?1329934995') no-repeat scroll top center #1f1f30;
+  color: #333333;
+  line-height: 135%;
+  /* TODO: vertical rhythm */
+}
+
+.-xmas-header, #header {
+  height: 206px;
+  /* TODO: vertical rhythm */
+}
+
+.-xmas-logo, #logo {
+  float: left;
+  margin-right: 1em;
+}
+
+.-xmas-branding, #name-and-slogan {
+  padding-left: 70px;
+  padding-top: 50px;
+}
+
+.-xmas-site-name, #site-name {
+  letter-spacing: -1px;
+  font-size: 2.429em;
+  background-image: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+.-xmas-site-name a, #site-name a {
+  font-weight: normal;
+  line-height: 25px;
+  /* TODO: vertical rhythm */
+  text-decoration: none;
+  color: white;
+}
+
+.-xmas-site-slogan, #site-slogan {
+  padding: 10px 0;
+  /* TODO: vertical rhythm */
+  text-transform: uppercase;
+  font-size: 0.786em;
+  color: #CECFDB;
+  /* TODO: color palette */
+}
+
+.-xmas-container, #container {
+  background: white url('../images/bk_content.jpg?1329934995') 0 0 repeat-y;
+}
+
+.-xmas-sidebar, #sidebar-left, #sidebar-right {
+  padding-top: 1.5em;
+  width: 270px;
+  float: left;
+}
+
+.-xmas-main, #main {
+  padding-top: 1.5em;
+  width: 690px;
+  float: left;
+}
+.-xmas-main.with-breadcrumb, .with-breadcrumb#main {
+  padding-top: 0;
+}
+
+.-xmas-mission, #mission {
+  margin: 0 auto 1em;
+  width: 635px;
+}
+
+.-xmas-breadcrumb, #breadcrumb {
+  width: 635px;
+  margin: 0 auto;
+  padding: 0.2em 0 0.5em;
+  line-height: 1em;
+}
+
+.-xmas-content, #content {
+  width: 635px;
+  margin: 0 auto;
+  position: relative;
+}
+.-xmas-content .created, #content .created {
+  position: absolute;
+  /* TODO: layout */
+  top: 0;
+  left: -40px;
+  height: 35px;
+  width: 70px;
+  background: url('../images/bk_date.png?1329934995') 0 0 no-repeat;
+  color: white;
+  line-height: 25px;
+  /* TODO: vertical rhythm */
+  text-align: center;
+  font-size: 0.786em;
+  /* TODO: vertical rhythm */
+  text-transform: uppercase;
+}
+.-xmas-content .created span, #content .created span {
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.tabs-sprite, .-xmas-tabs li, #content div.tabs li, .-xmas-tabs li.active, #content div.tabs li.active, .-xmas-tabs li.active a, #content div.tabs li.active a, .-xmas-tabs a, #content div.tabs a {
+  background: url('../images/tabs-saf346f12a8.png') no-repeat;
+}
+
+.-xmas-tabs ul, #content div.tabs ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+.-xmas-tabs ul li, #content div.tabs ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 0;
+  padding-right: 0;
+}
+.-xmas-tabs ul li:first-child, #content div.tabs ul li:first-child, .-xmas-tabs ul li.first, #content div.tabs ul li.first {
+  padding-left: 0;
+}
+.-xmas-tabs ul li:last-child, #content div.tabs ul li:last-child {
+  padding-right: 0;
+}
+.-xmas-tabs ul li.last, #content div.tabs ul li.last {
+  padding-right: 0;
+}
+.-xmas-tabs li, #content div.tabs li {
+  background-position: 0 -35px;
+  margin: 0 0.5em 0.75em;
+}
+.-xmas-tabs li.active, #content div.tabs li.active {
+  background-position: 0 0;
+}
+.-xmas-tabs li.active a, #content div.tabs li.active a {
+  background-position: 100% -70px;
+}
+.-xmas-tabs a, #content div.tabs a {
+  text-shadow: #aaaaaa 0px 0px 1px;
+  background-position: 100% -105px;
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+}
+
+.-xmas-messages, .messages {
+  list-style: none;
+  padding: 0.5em;
+  margin: 0 auto 0.5em;
+  width: 635px;
+  /* TODO: just a placeholder */
+}
+.-xmas-messages li, .messages li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+.-xmas-messages.status, .status.messages {
+  background: none repeat scroll 0 0 #DDFFFF;
+  border: 1px solid #20F0C0;
+}
+
+.-xmas-pager, #content .pager {
+  *zoom: 1;
+  text-align: left;
+  padding: 0;
+}
+.-xmas-pager:after, #content .pager:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.-xmas-pager li, #content .pager li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+.-xmas-pager a, #content .pager a {
+  background: url('../images/bk_page.png?1329934995') no-repeat center center;
+  text-decoration: none;
+  padding: 0.5em 0.75em;
+  display: block;
+  color: white;
+}
+.-xmas-pager a:hover, #content .pager a:hover {
+  background: url('../images/bk_page_on.png?1329934995') no-repeat center center;
+}
+.-xmas-pager .pager-info, #content .pager .pager-info {
+  margin-right: 0.5em;
+}
+.-xmas-pager .pager-current, #content .pager .pager-current {
+  color: white;
+  padding: 0.5em 0.75em;
+  background: url('../images/bk_page_on.png?1329934995') no-repeat center center;
+}
+
+.-xmas-title, .-xmas-node-title, .node > h2, #page-title {
+  background: url('../images/bk_line.jpg?1329934995') no-repeat scroll left bottom transparent;
+  font-size: 1.786em;
+  /* 25px if base font-size is 14px */
+  font-weight: normal;
+  letter-spacing: -1px;
+  padding-bottom: 25px;
+  /* TODO: vertical rhythm */
+  margin-top: 0;
+  line-height: 1.3em;
+}
+.-xmas-title.display-submitted, .display-submitted.-xmas-node-title, .node > h2.display-submitted, .display-submitted#page-title {
+  background: none;
+  padding-left: 50px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.-xmas-title a, .-xmas-node-title a, .node > h2 a, #page-title a {
+  text-decoration: none;
+}
+
+.-xmas-footer, #footer-wrapper {
+  padding: 65px 0 40px;
+  /* TODO: vertical rhythm */
+  color: #666666;
+  background: url('../images/bk_footer.jpg?1329934995') 0 0 no-repeat;
+  position: relative;
+  /* TODO: layout */
+}
+
+/* Xmas block.tpl.php styles */
+.-xmas-block-title, .block > h2 {
+  background: url('../images/bk_h2_right.png?1329934995') 0 0 no-repeat;
+  height: 34px;
+  line-height: 32px;
+  text-indent: 33px;
+  text-transform: uppercase;
+  color: #DBEDF9;
+  text-shadow: #00659F 1px 1px;
+  font-size: 12px;
+  font-weight: normal;
+  margin: 0 -7px 0 2px;
+}
+
+.-xmas-sidebar-block, #sidebar-left .block, #sidebar-right .block {
+  margin-bottom: 1em;
+}
+
+.-xmas-sidebar-block-title, #sidebar-left .block > h2, #sidebar-right .block > h2 {
+  font-size: 12px;
+}
+
+.-xmas-sidebar-block-content, #sidebar-left .block .content, #sidebar-right .block .content {
+  font-size: 12px;
+  margin-left: 1em;
+}
+
+/* Xmas node.tpl.php styles */
+.-xmas-node, .node {
+  background: url('../images/bk_line_ornament.jpg?1329934995') bottom left no-repeat;
+  padding-bottom: 25px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.-xmas-node-title.display-submitted, .node > h2.display-submitted {
+  background: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-left: 50px;
+}
+
+.-xmas-node-meta, .node .meta {
+  padding-left: 50px;
+  padding-bottom: 2em;
+  margin-top: 0.8em;
+  font-size: 0.8em;
+  color: #666;
+  background: url('../images/bk_line.jpg?1329934995') no-repeat scroll left bottom transparent;
+}
+
+.-xmas-node-submitted, .node .submitted {
+  display: inline-block;
+  text-indent: 36px;
+  height: 22px;
+  background: url('../images/bk_bell.png?1329934995') no-repeat left center;
+}
+
+.-xmas-node-links li, .node .links li {
+  padding: 0;
+  margin: 0 1em 0 0;
+}
+.-xmas-node-links li a, .node .links li a {
+  color: #c32400;
+  font-weight: bold;
+}
+
+/* Xmas profile.tpl.php styles */
+#autocomplete ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#autocomplete ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+#autocomplete li {
+  padding-left: 1em;
+}

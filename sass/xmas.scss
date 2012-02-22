@@ -1,0 +1,119 @@
+@import "xmas-skin";
+@import "_xmas-base";
+
+// page.tpl.php
+body { @extend .-xmas-body; }
+
+#page { @extend .-xmas-page; }
+
+#header {
+  @extend .-xmas-header; }
+
+#logo { @extend .-xmas-logo; }
+
+#name-and-slogan { @extend .-xmas-branding; }
+
+#site-name { @extend .-xmas-site-name; }
+
+#site-slogan { @extend .-xmas-site-slogan; }
+
+#header-region { @extend .-xmas-header-region; }
+
+#container { @extend .-xmas-container; }
+
+#navigation { @extend .-xmas-navigation; }
+
+ul.primary-links  {
+  @extend .-xmas-menu;
+  > li > .links { @extend .-xmas-submenu; } }
+
+ul.secondary-links  { @extend .-xmas-menu; }
+
+#sidebar-left { @extend .-xmas-sidebar; }
+
+#main { @extend .-xmas-main; }
+
+#mission { @extend .-xmas-mission; }
+
+#breadcrumb { @extend .-xmas-breadcrumb; }
+
+.messages { @extend .-xmas-messages; }
+
+#content {
+  @extend .-xmas-content;
+
+  div.tabs { @extend .-xmas-tabs; }
+
+  .pager { @extend .-xmas-pager; }
+
+  //drupal prints only a link with an image inside, beware.
+  .feed-icon { @extend .-xmas-feed-icons; } }
+
+#page-title { @extend .-xmas-title; }
+
+#content-content { @extend .-xmas-content-area; }
+
+#sidebar-right { @extend .-xmas-sidebar; }
+
+#footer-wrapper { @extend .-xmas-footer; }
+
+//Drupal will print the footer message right away, but theming the
+//whole region isn't a good idea. Copy page.tpl.php to your theme and
+//edit it to wrap the $footer_message variable
+.footer-message { @extend .-xmas-footer-message; }
+
+
+// block.tpl.php
+.block {
+  // try scoping the selectors by region
+  @extend .-xmas-block;
+  > h2 { @extend .-xmas-block-title; }
+  .content { @extend .-xmas-block-content; }
+
+  // these are Kit regions blocks, set as examples for any region specific block styling
+  #content-content & {
+    @extend .-xmas-content-block;
+    > h2 { @extend .-xmas-content-block-title; }
+    .content { @extend .-xmas-content-block-content; } }
+
+  #sidebar-left &,
+  #sidebar-right & {
+    @extend .-xmas-sidebar-block;
+    > h2 { @extend .-xmas-sidebar-block-title; }
+    .content { @extend .-xmas-sidebar-block-content; } }
+
+  #header-region & {
+    @extend .-xmas-header-block;
+    > h2 { @extend .-xmas-header-block-title; }
+    .header { @extend .-xmas-header-block-header; } }
+
+  #footer & {
+    @extend .-xmas-footer-block;
+    > h2 { @extend .-xmas-footer-block-title; }
+    .footer { @extend .-xmas-footer-block-footer; } }
+}
+
+// node.tpl.php
+.node {
+  @extend .-xmas-node;
+  .picture { @extend .-xmas-node-picture; }
+  > h2 { @extend .-xmas-node-title; }
+  .meta { @extend .-xmas-node-meta; }
+  .submitted { @extend .-xmas-node-submitted; }
+  .terms { @extend .-xmas-node-terms; }
+  .content { @extend .-xmas-node-content; }
+  .links { @extend .-xmas-node-links; }
+  &.sticky { @extend .-xmas-node-sticky; }
+  &.node-unpublished { @extend .-xmas-node-unpublished; }
+  .preview & { @extend .-xmas-node-preview; } }
+
+// user-profile.tpl.php
+.profile {
+  @extend .-xmas-profile;
+  .picture { @extend .-xmas-profile-picture; }
+  h3 { @extend .-xmas-profile-category-title; }
+  dl { @extend .-xmas-profile-category-wrapper; }
+  dt { @extend .-xmas-profile-field-label; }
+  dd { @extend .-xmas-profile-field-value; } }
+
+@import "xmas-forms";

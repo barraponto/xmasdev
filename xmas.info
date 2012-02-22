@@ -1,6 +1,5 @@
-
-name = xmasdev
-description = This is a raw, naked, bare Drupal theme. It inherits all of the default theme values. See http://drupal.org/node/171206 for more info on defaults.
+name = xmas
+description = This is a port of Wordpress Xmas theme by Site5
 core = 6.x
 engine = phptemplate
 
@@ -38,4 +37,4 @@ stylesheets[all][] = "user.css"
 ;minimal css required for javascript features.
 stylesheets[all][] = stylesheets/normalize.css
 stylesheets[all][] = stylesheets/drupal.css
-stylesheets[all][] = stylesheets/xmasdev.css
+stylesheets[all][] = stylesheets/xmas.css
