@@ -140,8 +140,6 @@ tbody .-xmasdev-table-row, tbody .-xmasdev-full-html-content tr, .-xmasdev-full-
 .-xmasdev-header, #header {
   height: 206px;
   /* TODO: vertical rhythm */
-  position: relative;
-  /* TODO: layout */
 }
 
 .-xmasdev-logo, #logo {
@@ -149,15 +147,9 @@ tbody .-xmasdev-table-row, tbody .-xmasdev-full-html-content tr, .-xmasdev-full-
   margin-right: 1em;
 }
 
-.-xmasdev-name-and-slogan {
-  position: absolute;
-  /* TODO: layout */
-  top: 70px;
-  /* TODO: layout */
-  left: 70px;
-  /* TODO: layout */
-  right: 70px;
-  /* fixes misterious width quirk */
+.-xmasdev-branding, #name-and-slogan {
+  padding-left: 70px;
+  padding-top: 50px;
 }
 
 .-xmasdev-site-name, #site-name {
@@ -165,6 +157,7 @@ tbody .-xmasdev-table-row, tbody .-xmasdev-full-html-content tr, .-xmasdev-full-
   font-size: 2.429em;
   background-image: none;
   padding: 0;
+  margin-bottom: 0;
 }
 .-xmasdev-site-name a, #site-name a {
   font-weight: normal;

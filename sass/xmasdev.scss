@@ -11,6 +11,8 @@ body { @extend .-xmasdev-body; }
 
 #logo { @extend .-xmasdev-logo; }
 
+#name-and-slogan { @extend .-xmasdev-branding; }
+
 #site-name { @extend .-xmasdev-site-name; }
 
 #site-slogan { @extend .-xmasdev-site-slogan; }
