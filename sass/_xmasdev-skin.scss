@@ -286,14 +286,28 @@ $xmasdev-white: #FFFFFF;
       font-weight: bold;
       font-size: 19px; } } }
 
+$tabs-position: 100%;
+@import "tabs/*.png";
 .-xmasdev-tabs {
   .primary { }
   .secondary { }
   // the following styles apply to both tab groups.
-  ul { }
-  li { }
-  a { }
-  a.active { } }
+  ul {
+    @include horizontal-list(0); }
+  li {
+    @include tabs-sprite(inactive-left);
+    margin: 0 0.5em; }
+  li.active {
+    @include tabs-sprite(active-left); }
+  a {
+    @include text-shadow;
+    @include tabs-sprite(inactive-right, $offset-x: 100%);
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em; }
+  a.active { 
+    @include tabs-sprite(active-right, $offset-x: 100%); } }
 
 .-xmasdev-messages {
   @include no-bullets;
