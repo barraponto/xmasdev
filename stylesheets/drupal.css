@@ -178,9 +178,9 @@ html.js .resizable-textarea textarea {
  */
 .draggable a.tabledrag-handle {
   cursor:move;
-  float:left;
   margin-right:10px;
   text-decoration:none;
+  vertical-align: baseline;
   }
 
 a.tabledrag-handle:hover { text-decoration:none; }
@@ -188,7 +188,9 @@ a.tabledrag-handle:hover { text-decoration:none; }
 a.tabledrag-handle .handle {
   height:20px;
   width:20px;
-  background:url(drupal/draggable.png) 0px 0px no-repeat;
+  vertical-align: middle;
+  display: inline-block;
+  background: url('drupal/draggable.png') 0px 0px no-repeat;
   }
 
 a.tabledrag-handle-hover .handle { background-position:0px -20px; }
