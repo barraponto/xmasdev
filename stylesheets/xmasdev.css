@@ -92,7 +92,7 @@
   width: 100%;
 }
 .-xmasdev-table thead, .-xmasdev-full-html-content table thead, .page-admin .-xmasdev-content-area table thead, .page-admin #content-content table thead, .-xmasdev-node-content table thead, .node .content table thead {
-  background: url('../images/tableheader.png?1329916984') no-repeat top left;
+  background: url('../images/tableheader.png?1329934995') no-repeat top left;
 }
 
 .-xmasdev-table-row, .-xmasdev-full-html-content tr, .page-admin .-xmasdev-content-area tr, .page-admin #content-content tr, .-xmasdev-node-content tr, .node .content tr {
@@ -131,7 +131,7 @@ tbody .-xmasdev-table-row, tbody .-xmasdev-full-html-content tr, .-xmasdev-full-
   font-size: 14px;
   width: 960px;
   margin: 0 auto;
-  background: url('../images/bk_body.jpg?1323816876') no-repeat scroll top center #1f1f30;
+  background: url('../images/bk_body.jpg?1329934995') no-repeat scroll top center #1f1f30;
   color: #333333;
   line-height: 135%;
   /* TODO: vertical rhythm */
@@ -184,7 +184,7 @@ tbody .-xmasdev-table-row, tbody .-xmasdev-full-html-content tr, .-xmasdev-full-
 }
 
 .-xmasdev-container, #container {
-  background: white url('../images/bk_content.jpg?1323816876') 0 0 repeat-y;
+  background: white url('../images/bk_content.jpg?1329934995') 0 0 repeat-y;
 }
 
 .-xmasdev-sidebar, #sidebar-left, #sidebar-right {
@@ -226,7 +226,7 @@ tbody .-xmasdev-table-row, tbody .-xmasdev-full-html-content tr, .-xmasdev-full-
   left: -40px;
   height: 35px;
   width: 70px;
-  background: url('../images/bk_date.png?1323816876') 0 0 no-repeat;
+  background: url('../images/bk_date.png?1329934995') 0 0 no-repeat;
   color: white;
   line-height: 25px;
   /* TODO: vertical rhythm */
@@ -240,10 +240,13 @@ tbody .-xmasdev-table-row, tbody .-xmasdev-full-html-content tr, .-xmasdev-full-
   font-size: 19px;
 }
 
-.tabs-sprite, .-xmasdev-tabs li, #content div.tabs li, .-xmasdev-tabs li.active, #content div.tabs li.active, .-xmasdev-tabs a, #content div.tabs a, .-xmasdev-tabs a.active, #content div.tabs a.active {
+.tabs-sprite, .-xmasdev-tabs li, #content div.tabs li, .-xmasdev-tabs li.active, #content div.tabs li.active, .-xmasdev-tabs li.active a, #content div.tabs li.active a, .-xmasdev-tabs a, #content div.tabs a {
   background: url('../images/tabs-saf346f12a8.png') no-repeat;
 }
 
+.meta + .-xmasdev-tabs, #content .meta + div.tabs {
+  padding-left: 50px;
+}
 .-xmasdev-tabs ul, #content div.tabs ul {
   margin: 0;
   padding: 0;
@@ -272,10 +275,13 @@ tbody .-xmasdev-table-row, tbody .-xmasdev-full-html-content tr, .-xmasdev-full-
 }
 .-xmasdev-tabs li, #content div.tabs li {
   background-position: 0 -35px;
-  margin: 0 0.5em;
+  margin: 0 0.5em 0.75em;
 }
 .-xmasdev-tabs li.active, #content div.tabs li.active {
   background-position: 0 0;
+}
+.-xmasdev-tabs li.active a, #content div.tabs li.active a {
+  background-position: 100% -70px;
 }
 .-xmasdev-tabs a, #content div.tabs a {
   text-shadow: #aaaaaa 0px 0px 1px;
@@ -285,20 +291,20 @@ tbody .-xmasdev-table-row, tbody .-xmasdev-full-html-content tr, .-xmasdev-full-
   text-decoration: none;
   padding: 0.5em 1em;
 }
-.-xmasdev-tabs a.active, #content div.tabs a.active {
-  background-position: 100% -70px;
-}
 
-.-xmasdev-messages, #content .messages {
+.-xmasdev-messages, .messages {
   list-style: none;
+  padding: 0.5em;
+  margin: 0 auto 0.5em;
+  width: 635px;
   /* TODO: just a placeholder */
 }
-.-xmasdev-messages li, #content .messages li {
+.-xmasdev-messages li, .messages li {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0;
 }
-.-xmasdev-messages.status, #content .status.messages {
+.-xmasdev-messages.status, .status.messages {
   background: none repeat scroll 0 0 #DDFFFF;
   border: 1px solid #20F0C0;
 }
@@ -319,14 +325,14 @@ tbody .-xmasdev-table-row, tbody .-xmasdev-full-html-content tr, .-xmasdev-full-
   margin: 0;
 }
 .-xmasdev-pager a, #content .pager a {
-  background: url('../images/bk_page.png?1323816876') no-repeat center center;
+  background: url('../images/bk_page.png?1329934995') no-repeat center center;
   text-decoration: none;
   padding: 0.5em 0.75em;
   display: block;
   color: white;
 }
 .-xmasdev-pager a:hover, #content .pager a:hover {
-  background: url('../images/bk_page_on.png?1323816876') no-repeat center center;
+  background: url('../images/bk_page_on.png?1329934995') no-repeat center center;
 }
 .-xmasdev-pager .pager-info, #content .pager .pager-info {
   margin-right: 0.5em;
@@ -334,11 +340,11 @@ tbody .-xmasdev-table-row, tbody .-xmasdev-full-html-content tr, .-xmasdev-full-
 .-xmasdev-pager .pager-current, #content .pager .pager-current {
   color: white;
   padding: 0.5em 0.75em;
-  background: url('../images/bk_page_on.png?1323816876') no-repeat center center;
+  background: url('../images/bk_page_on.png?1329934995') no-repeat center center;
 }
 
 .-xmasdev-title, .-xmasdev-node-title, .node > h2, #page-title {
-  background: url('../images/bk_line.jpg?1323816876') no-repeat scroll left bottom transparent;
+  background: url('../images/bk_line.jpg?1329934995') no-repeat scroll left bottom transparent;
   font-size: 1.786em;
   /* 25px if base font-size is 14px */
   font-weight: normal;
@@ -362,14 +368,14 @@ tbody .-xmasdev-table-row, tbody .-xmasdev-full-html-content tr, .-xmasdev-full-
   padding: 65px 0 40px;
   /* TODO: vertical rhythm */
   color: #666666;
-  background: url('../images/bk_footer.jpg?1323816876') 0 0 no-repeat;
+  background: url('../images/bk_footer.jpg?1329934995') 0 0 no-repeat;
   position: relative;
   /* TODO: layout */
 }
 
 /* Xmas block.tpl.php styles */
 .-xmasdev-block-title, .block > h2 {
-  background: url('../images/bk_h2_right.png?1323816876') 0 0 no-repeat;
+  background: url('../images/bk_h2_right.png?1329934995') 0 0 no-repeat;
   height: 34px;
   line-height: 32px;
   text-indent: 33px;
@@ -396,7 +402,7 @@ tbody .-xmasdev-table-row, tbody .-xmasdev-full-html-content tr, .-xmasdev-full-
 
 /* Xmas node.tpl.php styles */
 .-xmasdev-node, .node {
-  background: url('../images/bk_line_ornament.jpg?1323816876') bottom left no-repeat;
+  background: url('../images/bk_line_ornament.jpg?1329934995') bottom left no-repeat;
   padding-bottom: 25px;
   margin-bottom: 20px;
   position: relative;
@@ -415,14 +421,14 @@ tbody .-xmasdev-table-row, tbody .-xmasdev-full-html-content tr, .-xmasdev-full-
   margin-top: 0.8em;
   font-size: 0.8em;
   color: #666;
-  background: url('../images/bk_line.jpg?1323816876') no-repeat scroll left bottom transparent;
+  background: url('../images/bk_line.jpg?1329934995') no-repeat scroll left bottom transparent;
 }
 
 .-xmasdev-node-submitted, .node .submitted {
   display: inline-block;
   text-indent: 36px;
   height: 22px;
-  background: url('../images/bk_bell.png?1323816876') no-repeat left center;
+  background: url('../images/bk_bell.png?1329934995') no-repeat left center;
 }
 
 .-xmasdev-node-links li, .node .links li {
@@ -435,3 +441,16 @@ tbody .-xmasdev-table-row, tbody .-xmasdev-full-html-content tr, .-xmasdev-full-
 }
 
 /* Xmas profile.tpl.php styles */
+#autocomplete ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#autocomplete ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+#autocomplete li {
+  padding-left: 1em;
+}
