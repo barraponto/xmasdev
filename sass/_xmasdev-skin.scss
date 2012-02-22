@@ -289,8 +289,6 @@ $xmasdev-white: #FFFFFF;
 $tabs-position: 100%;
 @import "tabs/*.png";
 .-xmasdev-tabs {
-  .meta + & {
-    padding-left: 50px; }
   .primary { }
   .secondary { }
   // the following styles apply to both tab groups.

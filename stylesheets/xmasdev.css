@@ -244,9 +244,6 @@ tbody .-xmasdev-table-row, tbody .-xmasdev-full-html-content tr, .-xmasdev-full-
   background: url('../images/tabs-saf346f12a8.png') no-repeat;
 }
 
-.meta + .-xmasdev-tabs, #content .meta + div.tabs {
-  padding-left: 50px;
-}
 .-xmasdev-tabs ul, #content div.tabs ul {
   margin: 0;
   padding: 0;
